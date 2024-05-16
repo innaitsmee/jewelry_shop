@@ -1,0 +1,106 @@
+@import './utils/fonts';
+@import './utils/mixins';
+@import './utils/texts';
+@import './utils/variables';
+@import './base';
+@import './utils/utils';
+
+@import './components/block-border';
+@import './components/icons';
+@import './components/image';
+@import './components/buttons';
+@import './components/card';
+@import './components/category-card';
+@import './components/checkbox';
+@import './components/dropdown-search-form';
+@import './components/footer-form';
+@import './components/header-search-form';
+@import './components/logo';
+@import './components/search-form';
+@import './components/title';
+
+@import './layout/about-us-preview-section';
+@import './layout/accordion';
+@import './layout/article-preview-section';
+@import './layout/benefits-mobile-section';
+@import './layout/cards-list';
+@import './layout/catalog-filters';
+@import './layout/categories-section';
+@import './layout/container';
+@import './layout/dropdown';
+@import './layout/favourites-modal';
+@import './layout/footer-copyright';
+@import './layout/footer';
+@import './layout/gift-section';
+@import './layout/header';
+@import './layout/hero-section';
+@import './layout/inspo-mobile-section';
+@import './layout/mobile-section';
+@import './layout/modal';
+@import './layout/product-container';
+@import './layout/product-section';
+@import './layout/recommendations-section';
+@import './layout/release-block';
+@import './layout/section';
+
+@import './pages/about-us';
+@import './pages/article';
+@import './pages/catalog';
+@import './pages/gifts';
+@import './pages/home';
+@import './pages/new-collection';
+
+/*шрифти*/
+
+/*змінні*/
+
+.test {
+  background-color: orchid;
+  @include adaptive (font-size, 16, 36);
+  @include adaptive (padding, 10, 50);
+}
+
+/*base*/
+
+
+.margin-bottom {
+  margin-bottom: 0;
+}
+
+
+.btn-close svg {
+  display: block;
+}
+
+
+
+/*перевірити шоб падінги були задані на
+самий верхній елемент - секціям/футеру/хедеру
+*/
+
+/*
+pointer-events:none - задається шоб на модальному вікні
+не працювали подіі, наприклад коли вікно приховане
+*/
+
+/*
+backdrop add paddings*/
+
+/*грідієнт можна дод до власт бек-імдж навіть якшо є фото
+спочатку вказуємо градієнт, потім чеез кому фото
+*/
+
+/*на формах з даними - тип сабміт*/
+
+/*в формі для замовлення може використ філдсет
+але при використанні філдсету треба заголовок робити 
+леджент замість тайтл
+*/
+
+/*задати фон там де є бекграунд бо якшо
+не завантаж картинка, то буде хоч фон
+*/
+
+/*thumb - контейнер для зберігання фото*/
+
+/* мб скомплектувати деякі файли як в модал на гіт */

@@ -1,0 +1,43 @@
+.catalog-section {
+  padding: 44px 0 24px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 52px 0 50px;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1362px;
+    margin: 0 auto;
+    padding: 0 26px;
+
+    @media screen and (min-width: $bp-tablet) {
+    padding: 0 40px;
+  }
+}
+
+  &__title {
+    text-align: center;
+    margin-bottom: 0.4em;
+  }
+
+  &__text {
+    color: #646464;
+    text-align: center;
+    margin-bottom: 3.2em;
+    @include adaptive(font-size, 16, 20);
+  }
+
+  &__cards-wrap {
+  padding: 3.2% 1.6%;
+  }
+}
+
+/*тут колір і розмір тексту такий же 
+як в каталожному заголовку, потім об*єднать*/
+.catalog-title {
+  color: #000;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  @include adaptive(font-size, 30, 40);
+}

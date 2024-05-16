@@ -1,0 +1,19 @@
+.recommendations {
+  padding-top: 30px;
+  padding-bottom: 75px;
+
+  &__title {
+    color: #000;
+    margin-bottom: 0.27em;
+    @include adaptive(font-size, 20, 30);
+  }
+
+  &__text {
+    color: #717171;
+    font-weight: 300;
+    margin-bottom: 1.65em;
+    @include adaptive(font-size, 14, 17);
+  }
+}
+
+//зробити слайдер на моб

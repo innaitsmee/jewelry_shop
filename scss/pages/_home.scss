@@ -1,0 +1,8 @@
+//відступ вкінці main перед футером
+.main {
+  padding-bottom: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 48px;
+  }
+}

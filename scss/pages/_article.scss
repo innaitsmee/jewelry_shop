@@ -1,0 +1,162 @@
+.article {
+  padding: 40px 0 60px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 70px 0;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 90px 0 95px;
+  }
+
+  &__container {
+    position: relative;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-bottom: 10%;
+    }
+
+    &::after {
+      content: "";
+      width: 36%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid rgba(0, 0, 0, 0.22);
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 24%;
+      }
+    }
+  }
+
+  &__date {
+    color: #000;
+    //margin-bottom: 24px;
+    margin-bottom: 1.41em;
+    @include adaptive(font-size, 12, 17);
+  }
+
+  &__title {
+    color: #000;
+    text-align: center;
+    margin-bottom: 0.8em;
+    @include adaptive(font-size, 25, 40);
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      //margin-bottom: 32px;
+    }
+  }
+
+  &__img {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      width: 44%;
+      max-width: 453px;
+    }
+
+    &--top {
+      float: right;
+      margin: 0 0 10px 30px;
+    }
+
+    &--bottom {
+      float: left;
+      margin: 0 30px 10px 0;
+    }
+  }
+
+  //mob img
+
+  &__img-wrap {
+    max-height: 424px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__img-mob {
+    object-fit: cover;
+  }
+
+  &__content {
+    text-align: justify;
+    @include adaptive(font-size, 16, 22);
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
+
+    &--top {
+      @media screen and (min-width: $bp-desktop) {
+        max-width: 738px;
+      }
+    }
+
+    &--bottom {
+      @media screen and (min-width: $bp-desktop) {
+        margin-left: 42%;
+        max-width: 688px;
+      }
+    }
+  }
+
+  //blockquote
+  &__blockquote {
+    max-width: 475px;
+    margin: 0 auto;
+    padding: 32px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 670px;
+      padding: 54px 0;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      padding: 88px 0;
+    }
+  }
+
+  &__blockquote-text {
+    color: #000;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    margin: 0 0 12px;
+    @include adaptive(font-size, 20, 30);
+  }
+
+  &__blockquote-author {
+    color: #676767;
+    text-align: center;
+    @include adaptive(font-size, 14, 20);
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: right;
+      padding-right: 36px;
+    }
+  }
+
+  &__box {
+    margin-bottom: 1.82em;
+  }
+
+  &__author {
+    color: #2d2d2d;
+    text-align: right;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    @include adaptive(font-size, 18, 26);
+  }
+}

@@ -1,0 +1,103 @@
+.gifts-section {
+  padding: 40px 0 50px;
+  text-align: center;
+  background: linear-gradient(
+      180deg,
+      rgba(221, 212, 207, 0.13) 10.22%,
+      rgba(249, 243, 237, 0) 17.37%
+    ),
+    #fff;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 40px 0 64px;
+  }  
+
+  &__title {
+    color: #000;
+    margin-bottom: 0.44em;
+    @include adaptive(font-size, 40, 55);
+  }
+
+  &__text {
+    color: #646464;
+    margin-bottom: 2.7em;
+    @include adaptive(font-size, 16, 20);
+  }
+
+  &__list {
+    display: flex;
+    //justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 20px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    flex-basis: calc((100% - 10px) / 2);
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 2 * 20px) / 3);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-basis: calc((100% - 2 * 40px) / 3);
+    }
+  }
+}
+
+//card
+.gifts-card {
+  &__link {
+    // height: 400px;
+    position: relative;
+    width: 100%;
+    padding-top: 97%;
+    margin-bottom: 4%; //16px
+    border: 1px solid transparent;
+    transition: border-color, 0.3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: transparent;
+      transition: background-color, 0.3s;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+  }
+
+  &__title {
+    color: #4d4d4d;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    transition: background-color, 0.3s;
+    @include adaptive(font-size, 12, 20);
+  }
+
+  &:hover &__link {
+    border-color: #b6a69d;
+  }
+
+  &:hover &__link::after {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:hover &__title {
+    color: #b18165;
+  }
+}

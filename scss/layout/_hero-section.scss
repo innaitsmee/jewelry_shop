@@ -1,0 +1,77 @@
+.hero-section {
+  color: #fff;
+  text-align: center;
+  height: calc(100vh - 120px); //120px - header
+  display: flex;
+  align-items: center;
+  background: radial-gradient(
+      83.85% 40.9% at 3.94% 93.83%,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      124.49% 37.32% at 14.09% 57.01%,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(57deg, rgba(0, 0, 0, 0.2) 26.82%, rgba(0, 0, 0, 0) 52.62%),
+    url(/images/hero-section.webp), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: $bp-desktop) {
+    max-height: 832px;
+    text-align: left;
+    align-items: flex-end;
+    padding-bottom: 16vh;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/hero-section@2x.webp);
+  }
+
+  &__title {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+    @include adaptive(font-size, 40, 80);
+
+    @media screen and (min-width: $bp-tablet) {
+      text-shadow: none;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    @include adaptive(font-size, 16, 25);
+
+    @media screen and (min-width: $bp-tablet) {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-bottom: 1.28em;
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      color: rgba(255, 255, 255, 0.85);
+      border: 1px solid #e1dbd7;
+      margin: 0 auto;
+      transition: background-color 0.3s, border-color 0.3s;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.79);
+        border-color: #b6a69d;
+      }
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: 0;
+    }
+  }
+}

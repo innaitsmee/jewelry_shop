@@ -1,0 +1,39 @@
+.footer-copyright {
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+  }
+
+  &__text {
+    color: #626262;
+    font-size: 13px;
+  }
+
+  &__list {
+    list-style-type: disc;
+    display: flex;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+      gap: 29px;
+    }
+
+    & > li:first-child {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  }
+
+  &__item {
+    color: #646464;
+    font-size: 11px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-left: 8px;
+    }
+  }
+}

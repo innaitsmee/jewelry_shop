@@ -1,0 +1,93 @@
+.section {
+  &--dark {
+    //dark section home page
+    color: #ffffff;
+    background-color: #0f0d0d;
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-mobile) {
+      padding: 0 40px;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__picture {
+    display: none;
+
+    @media screen and (min-width: $bp-mobile) {
+      display: flex;
+      flex-basis: 40%;
+      flex-grow: 1;
+    }
+
+    &--left {
+      margin-left: -96px;
+    }
+
+    &--right {
+      justify-content: flex-end;
+      margin-right: -96px;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__inner {
+    @media screen and (min-width: $bp-mobile) {
+      flex-basis: 57%;
+      flex-grow: 1;
+    }
+    @media screen and (min-width: $bp-tablet) {
+      flex-grow: 0;
+      padding: 40px 0;
+    }
+  }
+
+  &__title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 1.82em;
+    @include adaptive(font-size, 13, 22);
+
+    & > p {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 24px;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 6px 0;
+    @include adaptive(width, 108, 145);
+    @include adaptive(font-size, 11, 21);
+
+    @media screen and (min-width: $bp-tablet) {
+      letter-spacing: normal;
+      padding: 12px 0;
+    }
+  }
+}

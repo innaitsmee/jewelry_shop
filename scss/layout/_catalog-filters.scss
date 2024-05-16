@@ -1,0 +1,52 @@
+.filters {
+  &__container {
+    margin: 0 auto;
+    text-align: center;
+    @include adaptive(max-width, 500, 700);
+  }
+
+  &__flex {
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  &__title {
+    color: #717171;
+    font-size: 17px;
+    flex-basis: 25%;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 8px;
+  }
+
+  &__item {
+    flex-basis: 25%;
+    position: relative;
+  }
+
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    &:checked + .filters__label {
+      color: #b18165;
+    }
+  }
+
+  &__label {
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    @include adaptive(font-size, 14, 17);
+    &:hover {
+      color: #b18165;
+    }
+  }
+}

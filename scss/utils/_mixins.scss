@@ -1,0 +1,34 @@
+$minWidth: 390;
+$midWidth: 768;
+$maxWidth: 1512;
+
+@mixin adaptive($property, $minValue, $maxValue) {
+  #{$property}: calc(
+    #{$minValue + px} + ($maxValue - $minValue) * ((100vw - #{$minWidth + px}) /
+          ($maxWidth - $minWidth))
+  );
+
+  @media screen and (max-width: #{$minWidth + px}) {
+    #{$property}: $minValue + px;
+  }
+
+  @media screen and (min-width: #{$maxWidth + px}) {
+    #{$property}: $maxValue + px;
+  }
+}
+
+//
+@mixin adaptiveMid($property, $minValue, $maxValue) {
+  #{$property}: calc(
+    #{$minValue + px} + ($maxValue - $minValue) * ((100vw - #{$midWidth + px}) /
+          ($maxWidth - $midWidth))
+  );
+
+  @media screen and (max-width: #{$midWidth + px}) {
+    #{$property}: $minValue + px;
+  }
+
+  @media screen and (min-width: #{$maxWidth + px}) {
+    #{$property}: $maxValue + px;
+  }
+}

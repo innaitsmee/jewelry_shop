@@ -1,0 +1,25 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 8px;
+
+  @media screen and (min-width: $bp-tablet) {
+    gap: 25px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    gap: 40px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 8px) / 2);
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 2 * 25px) / 3);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-basis: calc((100% - 4 * 40px) / 5);
+    }
+  }
+}

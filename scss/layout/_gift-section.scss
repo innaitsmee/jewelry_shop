@@ -1,0 +1,99 @@
+.gift-section {
+  color: #000;
+  padding: 70px 0;
+  display: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+    overflow: hidden;
+  }
+
+  &__container {
+    background: linear-gradient(
+        276deg,
+        rgba(229, 169, 125, 0.2) 17.15%,
+        rgba(255, 255, 255, 0.2) 51.12%
+      ),
+      #f4f0eb;
+  }
+
+  &__inner {
+    max-width: 610px;
+    align-self: center;
+  }
+
+  &__title {
+    margin-bottom: 0.534em;
+    @include adaptive(font-size, 25, 45);
+  }
+}
+
+//mobile
+.gift-section-mobile {
+  padding: 28px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+  }
+
+  &__container {
+    padding: 0 28px;
+  }
+
+  &__top-block {
+    margin-bottom: 28px;
+    position: relative;
+  }
+
+  &__top-img {
+    padding: 53px 0;
+    background-color: black;
+    background-image: url(/images/gifts-section-mob.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/images/gifts-section-mob@2x.webp);
+    }
+  }
+
+  &__title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 28px) / 2);
+  }
+}
+
+//gift card mobile
+.gift-card {
+  padding-top: 92%;
+
+  &__title {
+    font-style: italic;
+    font-size: 11px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    left: 6%;
+    bottom: 8%;
+  }
+}

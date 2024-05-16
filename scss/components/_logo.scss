@@ -1,0 +1,17 @@
+.logo {
+  flex-grow: 1;
+  flex-shrink: 0;
+  text-align: center;
+
+  &__link {
+    @include adaptive(font-size, 15, 27);
+    font-family: "Cormorant Infant", serif;
+    font-weight: 400;
+    color: var(--color-standard-black);
+    text-transform: uppercase;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-family: "Cormorant SC", serif;
+    }
+  }
+}

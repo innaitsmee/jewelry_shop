@@ -1,0 +1,29 @@
+.inspo-section {
+  padding: 28px 0 54px;
+  text-align: center;
+
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+  }
+
+  &__container {
+    padding: 0 28px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 32px;
+  }
+}
+
+.inspo-card {
+  padding-top: 76%;
+
+  &__title {
+    text-transform: uppercase;
+    left: 4%;
+    bottom: 6%;
+  }
+}

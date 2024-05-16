@@ -1,0 +1,12 @@
+/*додати цю серч форм до всіх форм в хедері потім,
+бо різниця тільки в падінгу
+*/
+.search-form {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(206, 205, 205, 0.88);
+}
+
+.search-input {
+    position: relative;
+}

@@ -1,0 +1,62 @@
+.release-section {
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 60px;
+  }
+
+  &__top-block {
+    color: #ffffff;
+    text-align: center;
+    background-image: url(/images/autumn.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 70px 0 90px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/images/autumn@2x.webp);
+    }
+  }
+
+  &__content {
+    max-width: 670px;
+    margin: 0 auto;
+    padding: 0 26px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 906px;
+      padding: 0 40px;
+    }
+  }
+
+  &__subtitle {
+    color: rgba(255, 255, 255, 0.73);
+    margin-bottom: 0;
+    @include adaptive(font-size, 14, 20);
+  }
+
+  &__title {
+    margin-bottom: 0.72em;
+    @include adaptive(font-size, 30, 53);
+  }
+
+  &__text {
+    @include adaptive(font-size, 14, 23);
+  }
+
+  &__container {
+    width: 100%;
+    max-width: 1326px;
+    margin: 0 auto;
+    padding: 0 26px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 0 40px;
+    }
+  }
+}

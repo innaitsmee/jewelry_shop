@@ -1,0 +1,232 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  @media screen and (min-width:$bp-mobile) {
+    padding: 20px;
+  }
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+
+  @media screen and (min-width:$bp-tablet) {
+    border-radius: 4px;
+  }
+
+  &__header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @media screen and (min-width:$bp-tablet) {
+      padding: 35px 44px 32px;
+      gap: 26px;
+    }
+  }
+
+  &__close {
+    width: 24px;
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: #c16a6a;
+    }
+
+    @media screen and (min-width:$bp-tablet) {
+      width: 28px;
+    }
+  }
+
+  &__border {
+    border-bottom: 1px solid #b5ada9;
+  }
+
+  &__title {
+    flex-grow: 1;
+    color: #000;
+    //font-size: 30px;
+    margin: 0;
+    @include adaptive(font-size, 22, 30);
+  }
+
+  &__form-wrapper {
+    padding: 32px 24px;
+
+    @media screen and (min-width:$bp-tablet) {
+      padding: 40px 54px 32px;
+    }
+  }
+
+  &__form-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    @media screen and (min-width:$bp-tablet) {
+      gap: 40px;
+    }
+  }
+
+  &__form-field {
+    position: relative;
+  }
+
+  &__label {
+    top: 16px;
+    left: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 1px;
+    border: 1px solid #d3d3d3;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    @include adaptive(font-size, 14, 19);
+
+    &::placeholder {
+      color: #848484;
+      @include adaptive(font-size, 14, 19);
+    }
+
+    @media screen and (min-width:$bp-tablet) {
+      padding: 16px 20px;
+    }
+  }
+
+  &__link {
+    color: #737373;
+    margin-bottom: 1.25em;
+    transition: color 0.3s;
+    @include adaptive(font-size, 12, 16);
+
+    &:hover {
+      color: #ca9577;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    border-radius: 1px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0.82);
+    padding: 10px 0;
+    margin-bottom: 0.95em;
+    cursor: pointer;
+    transition: background-color .3s,
+    border-color .3s;
+    @include adaptive(font-size, 16, 21);
+
+    @media screen and (min-width:$bp-tablet) {
+      padding: 15px 0;
+    }
+
+    &:hover {
+      background-color: #BD957F;
+      border-color: #BD957F;
+    }
+  }
+
+  &__checkbox {
+    text-align: left;
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    color: #4b4b4b;
+    text-align: center;
+    margin-bottom: 0.45em;
+    @include adaptive(font-size, 16, 18);
+  }
+
+  //тут скоріше всього не лінк бо відкр вікно, а не стр
+  &__auth-link {
+    display: block;
+    color: #b18165;
+    text-align: center;
+    transition: color .3s;
+    @include adaptive(font-size, 16, 18);
+
+    &:hover {
+      color: #E3BDA8;
+    }
+  }
+}
+
+.login-modal {
+  //max-height: 572px;
+
+  @media screen and (min-width:$bp-mobile) {
+    max-height: 572px;
+  }
+
+  &__form-wrap {
+    text-align: right;
+  }
+
+  &__form-inner {
+    margin-bottom: 10px;
+  }
+}
+
+.sign-up-modal {
+  //max-height: 505px;
+  @media screen and (min-width:$bp-mobile) {
+    max-height: 505px;
+  }
+
+  &__form-inner {
+    margin-bottom: 28px;
+
+    @media screen and (min-width:$bp-mobile) {
+      margin-bottom: 38px;
+    }
+  }
+}
+
+.login-modal,
+.sign-up-modal {
+  //max-width: 640px;
+  background: linear-gradient(
+      0deg,
+      rgba(219, 219, 219, 0.2) -4.46%,
+      rgba(255, 255, 255, 0) 24.96%
+    ),
+    #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+
+  @media  screen and (min-width:$bp-mobile) {
+    max-width: 640px;
+  }
+}
+
+.modal-icon {
+  width: 24px;
+  fill: #525252;
+
+  @media screen and (min-width:$bp-tablet) {
+    width: 32px;
+  }
+}

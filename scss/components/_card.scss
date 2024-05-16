@@ -1,0 +1,63 @@
+.card {
+  &__link {
+    /*height: 238px;*/
+    width: 100%;
+    margin-bottom: 12px;
+    padding-top: 109%; /*щоб фото не змінювали висоту при зміні екрану*/
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    position: relative;
+    border: 1px solid transparent;
+    transition: border-color .3s;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: lightgray;
+      opacity: 15%;
+      transition: background-color .3s, opacity .3s;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+   // left: 0;
+  }
+
+  &__title {
+    color: #323232;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    transition: color .3s;
+    @include adaptive(font-size, 12, 16);
+  }
+
+  &__price {
+    color: #8a8a8a;
+    @include adaptive(font-size, 12, 16);
+  }
+
+  &:hover &__link {
+    border-color: #E5E1DF;
+  }
+
+  &:hover &__link::after {
+    background-color: #fff;
+    opacity: 56%;
+  }
+
+  &:hover &__title {
+    color: #B18165;
+  }
+}
+
+//там де опасіті краще замін на rgba
+//з фото передивитись мб там треба обджект фіт
