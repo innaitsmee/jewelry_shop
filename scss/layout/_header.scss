@@ -175,9 +175,9 @@
   height: 100vh;
   z-index: 999;
   padding: 50px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
 
   @media screen and (min-width: $bp-mobile) {
     width: 50vw;
@@ -224,7 +224,7 @@
   }
 
   &__item, 
-  &__login {
+  &__big-btn {
     color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     border-radius: 1px;
@@ -241,8 +241,9 @@
     }
   }
 
-  &__login {
+  &__big-btn {
     width: 100%;
+    margin-bottom:2.285em;
     padding: 24px 0;
     font-size: 14px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -252,5 +253,37 @@
     &:hover {
       background-color: rgba(255, 255, 255, 0.148);
     }
+  }
+
+  &__actives {
+    padding: 24px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.169);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.169);
+  }
+
+  &__actives-btn {
+    width: 100%;
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    padding: 4px 6px;
+    text-align: left;
+    border-radius: 1px;
+    transition: background-color .3s,
+    color .3s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &__icon {
+    width: auto;
+    height: 18px;
+    fill: rgba(255, 255, 255, 0.6);
+    margin-bottom: -2px;
   }
 }
