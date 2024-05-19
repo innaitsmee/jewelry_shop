@@ -1,6 +1,7 @@
 .hero-section {
   color: #fff;
   text-align: center;
+  min-height: 100%;
   height: calc(100vh - 120px); //120px - header
   display: flex;
   align-items: center;

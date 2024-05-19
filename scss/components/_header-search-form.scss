@@ -4,8 +4,8 @@
   @media screen and (min-width: $bp-tablet) {
     display: flex;
     padding: 0 10px;
-    //max-width: 196px;
-    @include adaptiveMid(max-width, 160, 196);
+    max-width: 196px;
+    //@include adaptiveMid(max-width, 160, 196);
     align-items: center;
     border-bottom: 1px solid rgba(206, 205, 205, 0.88);
   }

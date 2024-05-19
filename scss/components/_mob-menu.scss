@@ -1,0 +1,148 @@
+.mobile-menu {
+  display: none; //delete
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 86vw;
+  height: 100vh;
+  z-index: 999;
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  overflow-y: auto; //scroll
+
+  @media screen and (min-width: $bp-mobile) {
+    width: 64vw;
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    display: none;
+  }
+
+  &__btn,
+  &__footer-title {
+    font-family: "Karla", sans-serif;
+    font-weight: 400;
+  }
+
+  &__btn-close {
+    color: var(--color-standard-white);
+    opacity: 0.8;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-bottom: 1px solid white;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__list {
+    margin-bottom: 2em;
+    padding-bottom: 24px;
+  }
+
+  &__sublist {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  &__item {
+    &:hover .mobile-menu__sublist {
+      max-height: 1000px;
+      transition: max-height 0.3s;
+    }
+  }
+
+  &__list-btn {
+    text-align: left;
+    //click js
+  }
+
+  &__btn-icon {
+    width: auto;
+    height: 18px;
+    fill: rgba(255, 255, 255, 0.6);
+    margin-bottom: -2px;
+  }
+
+  &__login {
+    margin-bottom: 2.285em;
+    padding: 24px 0;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.169);
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.148);
+    }
+  }
+
+  &__list-btn,
+  &__login,
+  &__link {
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 1px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__link,
+  &__list-btn {
+    font-size: 16px;
+    padding: 4px 6px;
+    transition: color 0.3s, background-color 0.3s;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &__actions {
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.169);
+  }
+
+  &__footer-title {
+    font-size: 16px;
+    color: #767676fa;
+    margin-bottom: 0.7em;
+  }
+
+  &__footer-link {
+    width: 100%;
+    font-size: 14px;
+    color: #616161;
+    padding: 4px 0;
+    transition: color 0.1s;
+
+    &:hover {
+      color: #767676fa;
+    }
+    &:hover span {
+      border-bottom: 1px solid #767676fa;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__socials-icon,
+  &__socials-icon path {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  &__border {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.169);
+  }
+}
