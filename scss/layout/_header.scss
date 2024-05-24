@@ -1,7 +1,7 @@
 .header {
   padding: 60px 0 32px;
   background-color: var(--color-standard-white);
-  border-bottom: 1px solid #e8dcd5;
+  border-bottom: 1px solid var(--color-border-light);
   position: relative;
 
   @media screen and (min-width: $bp-tablet) {
@@ -86,7 +86,7 @@
 
     @media screen and (min-width: $bp-tablet) {
       &:hover > .header__link {
-        color: #b18165;
+        color: var(--color-brand);
       }
     }
   }

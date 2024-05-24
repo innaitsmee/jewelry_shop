@@ -1,7 +1,7 @@
 .benefits-section {
   padding: 32px 0 60px;
   text-align: center;
-  color: #000000;
+  color: var(--color-standard-black);
 
   @media screen and (min-width: $bp-tablet) {
     display: none;
@@ -9,6 +9,10 @@
 
   &__container {
     padding: 0 50px;
+
+    @media screen and (min-width: $bp-mobile) {
+      padding: 0 40px;
+    }
   }
 
   &__title {
@@ -20,8 +24,8 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
-    border-left: 1px solid #dcd7d5;
-    border-right: 1px solid #dcd7d5;
+    border-left: 1px solid var(--color-border-side);
+    border-right: 1px solid var(--color-border-side);
     padding-bottom: 20px;
     margin-bottom: 40px;
   }
@@ -42,3 +46,5 @@
     font-size: 11px;
   }
 }
+
+//margin and fill correct

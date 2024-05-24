@@ -1,8 +1,26 @@
 :root {
     --color-standard-black:#000;
     --color-standard-white: #fff;
-    --color-border-gray: #bbb3af;
     --color-text-gray: #727272;
+    --color-brand: #b18165;
+    --color-brand-normal: #7e604f;
+    --color-brand-dark: #513729;
+    --color-bg-light: #f9f8f7;
+    --color-bg-dark: #0f0d0d;
+    --color-border-light: #e8dcd5;
+    --color-border-gray: #bbb3af;
+    --color-border-light-gray: #bfbfbf;
+    --color-border-form: rgba(206, 205, 205, 0.88);
+    --color-title-dark: #1c1c1c;
+    --color-dropdown-gray: #515151;
+    --color-dropdown-light-gray: #bcbcbc;
+    --color-btn-border: #e1dbd7;
+    --color-btn-border-hover: #b6a69d;
+    --color-btn-hover: rgba(255, 255, 255, 0.79);
+    --color-hero-light: rgba(255, 255, 255, 0.85);
+    --color-placeholder-gray: #727272;
+    --color-pseudo-gray: #a79991;
+    --color-border-side: #dcd7d5;
 }
 
 $bp-mobile: 480px;

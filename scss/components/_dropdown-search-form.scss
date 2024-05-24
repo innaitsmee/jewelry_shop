@@ -3,7 +3,7 @@
   max-width: 262px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(206, 205, 205, 0.88);
+  border-bottom: 1px solid var(--color-border-form);
   padding: 0 7px 0 12px;
 
   &__fieldset {
@@ -20,7 +20,7 @@
     font-size: 15px;
 
     &::placeholder {
-      color: #727272;
+      color: var(--color-placeholder-gray);
       font-size: 15px;
     }
   }
