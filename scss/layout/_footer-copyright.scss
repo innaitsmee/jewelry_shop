@@ -9,7 +9,7 @@
   }
 
   &__text {
-    color: #626262;
+    color: var(--color-copyright);
     font-size: 13px;
   }
 
@@ -29,7 +29,7 @@
   }
 
   &__item {
-    color: #646464;
+    color: var(--color-copyright-normal);
     font-size: 11px;
 
     @media screen and (min-width: $bp-desktop) {

@@ -43,6 +43,11 @@ img {
   /*object-fit: cover;*/
 }
 
+svg {
+  display: block;
+  fill: currentColor;
+}
+
 a {
   display: inline-block;
   text-decoration: none;

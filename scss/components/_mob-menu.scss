@@ -1,5 +1,4 @@
 .mobile-menu {
-  display: none; //delete
   position: fixed;
   top: 0;
   left: 0;
@@ -11,6 +10,8 @@
   backdrop-filter: blur(10px);
   box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
   overflow-y: auto; //scroll
+  transform: translateX(-110%);
+  transition: transform .3s;
 
   @media screen and (min-width: $bp-mobile) {
     width: 64vw;
@@ -18,6 +19,10 @@
 
   @media screen and (min-width: $bp-tablet) {
     display: none;
+  }
+
+  &.is-open {
+    transform: translateX(0);
   }
 
   &__btn,
@@ -32,7 +37,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--color-standard-white);
     transition: opacity 0.3s;
 
     &:hover {
@@ -59,15 +64,15 @@
   }
 
   &__list-btn {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 4px;
     //click js
-  }
 
-  &__btn-icon {
-    width: auto;
-    height: 18px;
-    fill: rgba(255, 255, 255, 0.6);
-    margin-bottom: -2px;
+    & svg {
+      width: auto;
+    height: 16px;
+    }
   }
 
   &__login {
@@ -75,7 +80,7 @@
     padding: 24px 0;
     font-size: 14px;
     background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.169);
+    border: 1px solid var(--color-mob-dark-rgba);
     transition: background-color 0.3s;
 
     &:hover {
@@ -89,7 +94,7 @@
     width: 100%;
     text-transform: uppercase;
     border-radius: 1px;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-mob-light);
   }
 
   &__link,
@@ -106,27 +111,27 @@
 
   &__actions {
     padding-top: 24px;
-    border-top: 1px solid rgba(255, 255, 255, 0.169);
+    border-top: 1px solid var(--color-mob-dark-rgba);
   }
 
   &__footer-title {
     font-size: 16px;
-    color: #767676fa;
+    color: var(--color-mob-dark);
     margin-bottom: 0.7em;
   }
 
   &__footer-link {
     width: 100%;
     font-size: 14px;
-    color: #616161;
+    color: var(--color-mob-gray);
     padding: 4px 0;
     transition: color 0.1s;
 
     &:hover {
-      color: #767676fa;
+      color: var(--color-mob-dark);
     }
     &:hover span {
-      border-bottom: 1px solid #767676fa;
+      border-bottom: 1px solid var(--color-mob-dark);
     }
   }
 
@@ -135,14 +140,16 @@
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-  }
+    color: var(--color-mob-light);
 
-  &__socials-icon,
-  &__socials-icon path {
-    fill: rgba(255, 255, 255, 0.6);
+    & svg path {
+      fill: currentColor;
+    }
   }
 
   &__border {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.169);
+    border-bottom: 1px solid var(--color-mob-dark-rgba);
   }
 }
+
+//color margin ok

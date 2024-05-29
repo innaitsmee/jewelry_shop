@@ -8,14 +8,17 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
 
   @media screen and (min-width:$bp-mobile) {
     padding: 20px;
   }
 
-  &.is-hidden {
-    opacity: 0;
-    visibility: hidden;
+  &.active-modal {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
