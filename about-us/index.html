@@ -24,10 +24,18 @@
                           Main Locations
                         </h3>
                         <ul class="dropdown__list">
-                          <li class="dropdown__item">Chicago, IL</li>
-                          <li class="dropdown__item">San Francisco, CA</li>
-                          <li class="dropdown__item">New York, NY</li>
-                          <li class="dropdown__item">Seattle, WA</li>
+                          <li class="dropdown__item">
+                            <a href="#">Chicago, IL</a>
+                          </li>
+                          <li class="dropdown__item">
+                            <a href="#">San Francisco, CA</a>
+                          </li>
+                          <li class="dropdown__item">
+                            <a href="#">New York, NY</a>
+                          </li>
+                          <li class="dropdown__item">
+                            <a href="#">Seattle, WA</a>
+                          </li>
                         </ul>
                       </div>
 
@@ -96,7 +104,7 @@
                           </h3>
                           <ul class="dropdown__list">
                             <li class="dropdown__item">
-                              <a href="#">Necklaces</a>
+                              <a href="../catalog/index.html">Necklaces</a>
                             </li>
                             <li class="dropdown__item">
                               <a href="#">Earrings</a>
@@ -207,15 +215,299 @@
               </ul>
             </nav>
 
-            <button class="button header__burger" type="button">
+            <button class="button header__burger menu-btn-open" type="button">
               <svg class="burger-icon" width="22" height="18">
                 <use href="../images/icons.svg#icon-burger"></use>
               </svg>
             </button>
+
+            <div class="mobile-menu">
+              <button
+                class="button mobile-menu__btn mobile-menu__btn-close menu-btn-close"
+                type="button"
+              >
+                close
+              </button>
+              <ul class="mobile-menu__list mobile-menu__border">
+                <li class="mobile-menu__item">
+                  <button
+                    class="button mobile-menu__btn mobile-menu__list-btn"
+                    type="button"
+                  >
+                    <svg width="22" height="22">
+                      <use href="/images/icons.svg#icon-ring"></use>
+                    </svg>
+                    Jewelry
+                  </button>
+                  <ul class="mobile-menu__sublist">
+                    <li><a class="mobile-menu__link" href="#">All</a></li>
+                    <li><a class="mobile-menu__link" href="#">Necklaces</a></li>
+                    <li><a class="mobile-menu__link" href="#">Earrings</a></li>
+                    <li><a class="mobile-menu__link" href="#">Bracelets</a></li>
+                    <li><a class="mobile-menu__link" href="#">Rings</a></li>
+                    <li><a class="mobile-menu__link" href="#">Charms</a></li>
+                  </ul>
+                </li>
+                <li class="mobile-menu__item">
+                  <button
+                    class="button mobile-menu__btn mobile-menu__list-btn"
+                    type="button"
+                  >
+                    <svg width="22" height="22">
+                      <use href="/images/icons.svg#icon-diamond"></use>
+                    </svg>
+                    NEW RELEASES
+                  </button>
+                  <ul class="mobile-menu__sublist">
+                    <li>
+                      <a class="mobile-menu__link" href="#"
+                        >the autumn equinox</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="mobile-menu__item">
+                  <button
+                    class="button mobile-menu__btn mobile-menu__list-btn"
+                    type="button"
+                  >
+                    <svg width="22" height="22">
+                      <use href="/images/icons.svg#icon-gift"></use>
+                    </svg>
+                    GIFTS
+                  </button>
+                  <ul class="mobile-menu__sublist">
+                    <li><a class="mobile-menu__link" href="#">ALL GIFTS</a></li>
+                    <li>
+                      <a class="mobile-menu__link" href="#">$100 and Under</a>
+                    </li>
+                    <li>
+                      <a class="mobile-menu__link" href="#">$200 - $300</a>
+                    </li>
+                    <li>
+                      <a class="mobile-menu__link" href="#">$300 and More</a>
+                    </li>
+                    <li><a class="mobile-menu__link" href="#">For Him</a></li>
+                    <li><a class="mobile-menu__link" href="#">For Her</a></li>
+                    <li><a class="mobile-menu__link" href="#">For Them</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <button
+                class="button mobile-menu__btn mobile-menu__login"
+                type="button"
+              >
+                Log in
+              </button>
+              <ul
+                class="mobile-menu__list mobile-menu__actions mobile-menu__border"
+              >
+                <li>
+                  <button
+                    class="button mobile-menu__btn mobile-menu__list-btn"
+                    type="button"
+                  >
+                    <svg width="22" height="22">
+                      <use href="/images/icons.svg#icon-cart"></use>
+                    </svg>
+                    Cart
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="button mobile-menu__btn mobile-menu__list-btn"
+                    type="button"
+                  >
+                    <svg width="22" height="22">
+                      <use href="/images/icons.svg#icon-favorite"></use>
+                    </svg>
+                    FAVOURITES
+                  </button>
+                </li>
+              </ul>
+              <div>
+                <div class="mobile-menu__list mobile-menu__border">
+                  <h3 class="mobile-menu__footer-title">CUSTOMER SERVICES</h3>
+                  <ul>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#">
+                        <span>Contact Us</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Track your Order</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Shipping & Returns</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Frequently Asked Questions</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Schedule an appointment</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mobile-menu__list mobile-menu__border">
+                  <h3 class="mobile-menu__footer-title">ABOUT US</h3>
+                  <ul>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Origins</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Our Purpose</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Careers</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Sustainability</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Giving Back</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mobile-menu__list mobile-menu__border">
+                  <h3 class="mobile-menu__footer-title">MATERIAL CARE</h3>
+                  <ul>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Jewelry Repair</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Ring Sizing</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Metal Allergy Resources</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Styling Tips</span></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <address class="mobile-menu__list mobile-menu__border">
+                  <div class="mobile-menu__footer-title">LOCATIONS</div>
+                  <!--використала div, бо h3 не можна використати -->
+                  <ul>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Chicago, IL</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>San Francisco, CA</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>New York, NY</span></a
+                      >
+                    </li>
+                    <li>
+                      <a class="mobile-menu__footer-link" href="#"
+                        ><span>Seattle, WA</span></a
+                      >
+                    </li>
+                  </ul>
+                </address>
+                <ul class="mobile-menu__socials">
+                  <li>
+                    <a href="#">
+                      <svg
+                        width="25"
+                        height="25"
+                      >
+                        <use href="../images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        width="25"
+                        height="25"
+                      >
+                        <use href="../images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        width="29"
+                        height="29"
+                      >
+                        <use href="../images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg
+                        width="32"
+                        height="34"
+                      >
+                        <use href="../images/icons.svg#icon-youtube"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <!--в спрайт не вдалось додати, ламалась svg при додаванні на сайті-->
+                      <svg
+                        width="24"
+                        height="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="#000"
+                          fill-opacity="1"
+                          fill-rule="evenodd"
+                          d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.836 1.836 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.839 1.839 0 0 1 1 21.161V2.838Zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634 3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388Zm-5.5 10.403h3.208V9.25H4.208v10.541ZM7.875 5.812a2.063 2.063 0 1 1-4.125.09 2.063 2.063 0 0 1 4.125-.09Z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           <div class="logo">
-            <a class="logo__link" href="/index.html"> a p o l l o n i a n </a>
+            <a class="logo__link" href="/">apollonian</a>
           </div>
 
           <div class="header__block header__block--right">
@@ -256,14 +548,14 @@
                 </button>
               </li>
               <li class="header__actions-item header__actions-item--desktop">
-                <button class="button header__btn" type="button">
+                <button class="button header__btn modal-btn-open" data-index="3" type="button">
                   <svg class="header-icon icon-block" width="22" height="22">
                     <use href="../images/icons.svg#icon-favorite"></use>
                   </svg>
                 </button>
               </li>
               <li class="header__actions-item">
-                <button class="button header__btn cart" type="button">
+                <button class="button header__btn modal-btn-open cart" data-index="2" type="button">
                   <svg class="cart-icon" width="22" height="22">
                     <use href="../images/icons.svg#icon-cart"></use>
                   </svg>
@@ -272,7 +564,7 @@
                 </button>
               </li>
               <li class="header__actions-item header__actions-item--tablet">
-                <button class="button header__btn" type="button">
+                <button class="button header__btn modal-btn-open" data-index="1" type="button">
                   <svg class="header-icon" width="22" height="24">
                     <use href="../images/icons.svg#icon-user"></use>
                   </svg>
@@ -323,7 +615,7 @@
       </section> 
     </main>
 
-    <footer class="footer">
+     <footer class="footer">
       <div class="footer__wrap">
         <div class="footer__container">
           <nav class="footer__nav">
@@ -392,8 +684,10 @@
           <address class="footer__address">
             <div class="footer__block">
               <div class="footer__form-wrap">
-                <p class="footer__bold-text">You can be one step ahead.</p>
-                <p class="footer__text">
+                <p class="footer__text footer__text--bold">
+                  You can be one step ahead.
+                </p>
+                <p class="footer__text footer__text--normal">
                   Sign up to hear about our updates on the dot.
                 </p>
                 <form class="footer-form" name="contact-form">
@@ -493,21 +787,22 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+
+    <div class="backdrop is-hidden" data-index="1">
       <div class="modal login-modal">
         <div class="modal__header modal__border">
           <svg class="modal-icon" width="32" height="32">
             <use href="/images/icons.svg#icon-person"></use>
           </svg>
           <h2 class="title modal__title">Log In</h2>
-          <button class="button btn-close" type="button">
-            <svg width="28" height="28">
+          <button class="button btn-close modal-btn-close" type="button">
+            <svg class="modal__close" width="28" height="28">
               <use href="/images/icons.svg#icon-close"></use>
             </svg>
           </button>
         </div>
 
-        <div class="modal__form-wrapper">
+        <div class="modal__form-wrapper login-modal__form-wrap">
           <form class="modal-form" name="login-form">
             <div class="modal__form-inner login-modal__form-inner">
               <div class="modal__form-field">
@@ -565,38 +860,38 @@
             <use href="/images/icons.svg#icon-person"></use>
           </svg>
           <h2 class="title modal__title">Sign Up</h2>
-          <button class="button btn-close" type="button">
-            <svg width="28" height="28">
+          <button class="button btn-close modal-btn-close" type="button">
+            <svg class="modal__close" width="28" height="28">
               <use href="/images/icons.svg#icon-close"></use>
             </svg>
           </button>
         </div>
 
         <div class="modal__form-wrapper">
-          <form class="modal-form" name="login-form">
+          <form class="modal-form" name="sign-up-form">
             <div class="modal__form-inner sign-up-modal__form-inner">
               <div class="modal__form-field">
-                <label class="visually-hidden modal__label" for="user-email"
+                <label class="visually-hidden modal__label" for="signup-user-email"
                   >Email</label
                 >
                 <input
                   class="modal__input"
                   type="email"
                   name="user-email"
-                  id="user-email"
+                  id="signup-user-email"
                   placeholder="Email address"
                 />
               </div>
 
               <div class="modal__form-field">
-                <label class="visually-hidden modal__label" for="user-password"
+                <label class="visually-hidden modal__label" for="signup-user-password"
                   >Password</label
                 >
                 <input
                   class="modal__input"
                   type="password"
                   name="user-password"
-                  id="user-password"
+                  id="signup-user-password"
                   placeholder="Password"
                 />
               </div>
@@ -611,108 +906,124 @@
       </div>
     </div>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-index="3">
       <div class="modal favourites-modal">
-        <div class="modal__header favourites-modal__header">
-          <svg class="favourites-icon" width="25" height="24">
-            <use href="/images/icons.svg#icon-heart"></use>
-          </svg>
-          <h2 class="title modal__title">My Favorites</h2>
-          <button class="button btn-close" type="button">
-            <svg width="28" height="28">
-              <use href="/images/icons.svg#icon-close"></use>
+        <div class="favourites-modal__shadow">
+          <div class="modal__header favourites-modal__header">
+            <svg class="favourites-icon" width="25" height="24">
+              <use href="/images/icons.svg#icon-heart"></use>
             </svg>
-          </button>
-        </div>
+            <h2 class="title modal__title">My Favorites</h2>
+            <button class="button btn-close modal-btn-close" type="button">
+              <svg class="modal__close" width="28" height="28">
+                <use href="/images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
 
-        <div class="favourites-modal__cards">
-          <ul class="favourites-modal__list">
-            <li class="favourites-modal__item">
-              <article class="card">
-                <a class="card__link" href="#">
-                  <img
-                    class="card__img"
-                    src="/images/initial-pendant@2x.jpg"
-                    alt="bracelets"
-                  />
-                </a>
-                <h2 class="card__title">CORNICELLO CHARM</h2>
-                <span class="card__price">$90.00</span>
-              </article>
-            </li>
+          <div class="favourites-modal__cards">
+            <ul class="favourites-modal__list">
+              <li class="favourites-modal__item">
+                <article class="card">
+                  <a class="card__link" href="#">
+                    <img
+                      class="card__img"
+                      src="/images/initial-pendant@2x.jpg"
+                      alt="bracelets"
+                    />
+                  </a>
+                  <h2 class="card__title">
+                    <a href="#">CORNICELLO CHARM</a>
+                  </h2>
+                  <span class="card__price">$90.00</span>
+                </article>
+              </li>
 
-            <li class="favourites-modal__item">
-              <article class="card">
-                <a class="card__link" href="#">
-                  <img
-                    class="card__img"
-                    src="/images/initial-pendant@2x.jpg"
-                    alt="bracelets"
-                  />
-                </a>
-                <h2 class="card__title">CORNICELLO CHARM</h2>
-                <span class="card__price">$90.00</span>
-              </article>
-            </li>
+              <li class="favourites-modal__item">
+                <article class="card">
+                  <a class="card__link" href="#">
+                    <img
+                      class="card__img"
+                      src="/images/initial-pendant@2x.jpg"
+                      alt="bracelets"
+                    />
+                  </a>
+                  <h2 class="card__title">
+                    <a href="#">CORNICELLO CHARM</a>
+                  </h2>
+                  <span class="card__price">$90.00</span>
+                </article>
+              </li>
 
-            <li class="favourites-modal__item">
-              <article class="card">
-                <a class="card__link" href="#">
-                  <img
-                    class="card__img"
-                    src="/images/initial-pendant@2x.jpg"
-                    alt="bracelets"
-                  />
-                </a>
-                <h2 class="card__title">CORNICELLO CHARM</h2>
-                <span class="card__price">$90.00</span>
-              </article>
-            </li>
+              <li class="favourites-modal__item">
+                <article class="card">
+                  <a class="card__link" href="#">
+                    <img
+                      class="card__img"
+                      src="/images/initial-pendant@2x.jpg"
+                      alt="bracelets"
+                    />
+                  </a>
+                  <h2 class="card__title">
+                    <a href="#">CORNICELLO CHARM</a>
+                  </h2>
+                  <span class="card__price">$90.00</span>
+                </article>
+              </li>
 
-            <li class="favourites-modal__item">
-              <article class="card">
-                <a class="card__link" href="#">
-                  <img
-                    class="card__img"
-                    src="/images/initial-pendant@2x.jpg"
-                    alt="bracelets"
-                  />
-                </a>
-                <h2 class="card__title">CORNICELLO CHARM</h2>
-                <span class="card__price">$90.00</span>
-              </article>
-            </li>
+              <li class="favourites-modal__item">
+                <article class="card">
+                  <a class="card__link" href="#">
+                    <img
+                      class="card__img"
+                      src="/images/initial-pendant@2x.jpg"
+                      alt="bracelets"
+                    />
+                  </a>
+                  <h2 class="card__title">
+                    <a href="#">CORNICELLO CHARM</a>
+                  </h2>
+                  <span class="card__price">$90.00</span>
+                </article>
+              </li>
 
-            <li class="favourites-modal__item">
-              <article class="card">
-                <a class="card__link" href="#">
-                  <img
-                    class="card__img"
-                    src="/images/initial-pendant@2x.jpg"
-                    alt="bracelets"
-                  />
-                </a>
-                <h2 class="card__title">CORNICELLO CHARM</h2>
-                <span class="card__price">$90.00</span>
-              </article>
-            </li>
+              <li class="favourites-modal__item">
+                <article class="card">
+                  <a class="card__link" href="#">
+                    <img
+                      class="card__img"
+                      src="/images/initial-pendant@2x.jpg"
+                      alt="bracelets"
+                    />
+                  </a>
+                  <h2 class="card__title">
+                    <a href="#">CORNICELLO CHARM</a>
+                  </h2>
+                  <span class="card__price">$90.00</span>
+                </article>
+              </li>
 
-            <li class="favourites-modal__item">
-              <article class="card">
-                <a class="card__link" href="#">
-                  <img
-                    class="card__img"
-                    src="/images/initial-pendant@2x.jpg"
-                    alt="bracelets"
-                  />
-                </a>
-                <h2 class="card__title">CORNICELLO CHARM</h2>
-                <span class="card__price">$90.00</span>
-              </article>
-            </li>
-          </ul>
+              <li class="favourites-modal__item">
+                <article class="card">
+                  <a class="card__link" href="#">
+                    <img
+                      class="card__img"
+                      src="/images/initial-pendant@2x.jpg"
+                      alt="bracelets"
+                    />
+                  </a>
+                  <h2 class="card__title">
+                    <a href="#">CORNICELLO CHARM</a>
+                  </h2>
+                  <span class="card__price">$90.00</span>
+                </article>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+    <script type="module" src="/code/mob-menu.js"></script>
+    <script type="module" src="/code/modal.js"></script>
   </body>
 </html>
