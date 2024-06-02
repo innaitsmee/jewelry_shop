@@ -29,7 +29,6 @@
 @import './layout/categories-section';
 @import './layout/container';
 @import './layout/dropdown';
-@import './layout/favourites-modal';
 @import './layout/footer-copyright';
 @import './layout/footer';
 @import './layout/gift-section';
@@ -55,12 +54,6 @@
 
 /*змінні*/
 
-.test {
-  background-color: orchid;
-  @include adaptive (font-size, 16, 36);
-  @include adaptive (padding, 10, 50);
-}
-
 /*base*/
 
 
@@ -68,10 +61,6 @@
   margin-bottom: 0;
 }
 
-
-.btn-close svg {
-  display: block;
-}
 
 
 

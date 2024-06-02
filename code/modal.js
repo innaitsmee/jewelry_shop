@@ -1,4 +1,4 @@
-import toggle from "./toggle-func.js";
+import toggleFunc from "./toggle-func.js";
 
 const [...modal] = document.querySelectorAll(".backdrop");
 const [...modalOpen] = document.querySelectorAll(".modal-btn-open");
@@ -12,14 +12,14 @@ let findElem = (btn) => {
 //open modal
 modalOpen.forEach((item) => {
   item.addEventListener("click", function () {
-    toggle(findElem(this), "active-modal");
+    toggleFunc(findElem(this), "active");
   });
 });
 
 //close modal
 modalClose.forEach((item) => {
   item.addEventListener("click", function () {
-    toggle(document.querySelector(".active-modal"), "active-modal");
+    toggleFunc(document.querySelector(".active"), "active");
   });
 });
 

@@ -834,128 +834,140 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-index="1">
+    <div class="backdrop" data-index="1">
       <div class="modal login-modal">
-        <div class="modal__header modal__border">
-          <svg class="modal-icon" width="32" height="32">
-            <use href="/images/icons.svg#icon-person"></use>
-          </svg>
-          <h2 class="title modal__title">Log In</h2>
-          <button class="button btn-close modal-btn-close" type="button">
-            <svg class="modal__close" width="28" height="28">
-              <use href="/images/icons.svg#icon-close"></use>
+        <div class="modal__wrap">
+          <div class="modal__header modal__header--gradient modal__border">
+            <svg class="modal-icon" width="32" height="32">
+              <use href="/images/icons.svg#icon-person"></use>
             </svg>
-          </button>
-        </div>
+            <h2 class="title modal__title">Log In</h2>
+            <button class="button btn-close modal-btn-close" type="button">
+              <svg class="modal__close" width="28" height="28">
+                <use href="/images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
 
-        <div class="modal__form-wrapper login-modal__form-wrap">
-          <form class="modal-form" name="login-form">
-            <div class="modal__form-inner login-modal__form-inner">
-              <div class="modal__form-field">
-                <label class="visually-hidden modal__label" for="user-email"
-                  >Email</label
-                >
-                <input
-                  class="modal__input"
-                  type="email"
-                  name="user-email"
-                  id="user-email"
-                  placeholder="Email address"
-                />
+          <div class="modal__form-wrapper login-modal__form-wrap">
+            <form class="modal__form" name="login-form">
+              <div class="modal__form-inner login-modal__form-inner">
+                <div class="modal__form-field">
+                  <label class="visually-hidden modal__label" for="user-email"
+                    >Email</label
+                  >
+                  <input
+                    class="modal__input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Email address"
+                  />
+                </div>
+
+                <div class="modal__form-field">
+                  <label
+                    class="visually-hidden modal__label"
+                    for="user-password"
+                    >Password</label
+                  >
+                  <input
+                    class="modal__input"
+                    type="password"
+                    name="user-password"
+                    id="user-password"
+                    placeholder="Password"
+                  />
+                </div>
               </div>
 
-              <div class="modal__form-field">
-                <label class="visually-hidden modal__label" for="user-password"
-                  >Password</label
-                >
+              <a class="modal__link" href="#">Forgot Password</a>
+              <button class="modal__btn" type="submit">LOG IN</button>
+
+              <div class="modal__checkbox checkbox">
                 <input
-                  class="modal__input"
-                  type="password"
-                  name="user-password"
-                  id="user-password"
-                  placeholder="Password"
+                  class="checkbox__input visually-hidden"
+                  type="checkbox"
+                  name="checkbox-input"
+                  id="checkbox_1"
                 />
+                <label class="checkbox__label" for="checkbox_1"
+                  >Keep me logged in
+                </label>
               </div>
-            </div>
-
-            <a class="modal__link" href="#">Forgot Password</a>
-            <button class="modal__btn" type="submit">LOG IN</button>
-
-            <div class="modal__checkbox checkbox">
-              <input
-                class="checkbox__input visually-hidden"
-                type="checkbox"
-                name="checkbox-input"
-                id="checkbox_1"
-              />
-              <label class="checkbox__label" for="checkbox_1"
-                >Keep me logged in
-              </label>
-            </div>
-            <p class="modal__text">Don’t have an account?</p>
-            <a class="modal__auth-link" href="#">Sign up now.</a>
-          </form>
+              <p class="modal__text">Don’t have an account?</p>
+              <a class="modal__auth" href="#">Sign up now.</a>
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="backdrop is-hidden">
+    <div class="backdrop" data-index="2">
       <div class="modal sign-up-modal">
-        <div class="modal__header modal__border">
-          <svg class="modal-icon" width="32" height="32">
-            <use href="/images/icons.svg#icon-person"></use>
-          </svg>
-          <h2 class="title modal__title">Sign Up</h2>
-          <button class="button btn-close modal-btn-close" type="button">
-            <svg class="modal__close" width="28" height="28">
-              <use href="/images/icons.svg#icon-close"></use>
+        <div class="modal__wrap">
+          <div class="modal__header modal__header--gradient modal__border">
+            <svg class="modal-icon" width="32" height="32">
+              <use href="/images/icons.svg#icon-person"></use>
             </svg>
-          </button>
-        </div>
+            <h2 class="title modal__title">Sign Up</h2>
+            <button class="button btn-close modal-btn-close" type="button">
+              <svg class="modal__close" width="28" height="28">
+                <use href="/images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
 
-        <div class="modal__form-wrapper">
-          <form class="modal-form" name="sign-up-form">
-            <div class="modal__form-inner sign-up-modal__form-inner">
-              <div class="modal__form-field">
-                <label class="visually-hidden modal__label" for="signup-user-email"
-                  >Email</label
-                >
-                <input
-                  class="modal__input"
-                  type="email"
-                  name="user-email"
-                  id="signup-user-email"
-                  placeholder="Email address"
-                />
+          <div class="modal__form-wrapper">
+            <form class="modal__form" name="sign-up-form">
+              <div class="modal__form-inner sign-up-modal__form-inner">
+                <div class="modal__form-field">
+                  <label
+                    class="visually-hidden modal__label"
+                    for="signup-user-email"
+                    >Email</label
+                  >
+                  <input
+                    class="modal__input"
+                    type="email"
+                    name="user-email"
+                    id="signup-user-email"
+                    placeholder="Email address"
+                  />
+                </div>
+
+                <div class="modal__form-field">
+                  <label
+                    class="visually-hidden modal__label"
+                    for="signup-user-password"
+                    >Password</label
+                  >
+                  <input
+                    class="modal__input"
+                    type="password"
+                    name="user-password"
+                    id="signup-user-password"
+                    placeholder="Password"
+                  />
+                </div>
               </div>
 
-              <div class="modal__form-field">
-                <label class="visually-hidden modal__label" for="signup-user-password"
-                  >Password</label
-                >
-                <input
-                  class="modal__input"
-                  type="password"
-                  name="user-password"
-                  id="signup-user-password"
-                  placeholder="Password"
-                />
-              </div>
-            </div>
+              <button class="modal__btn" type="submit">SIGN UP</button>
 
-            <button class="modal__btn" type="submit">SIGN UP</button>
-
-            <p class="modal__text">Already have an account?</p>
-            <a class="modal__auth-link" href="#">LOG IN</a>
-          </form>
+              <p class="modal__text">Already have an account?</p>
+              <a class="modal__auth" href="#">LOG IN</a>
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="backdrop is-hidden" data-index="3">
+    <div class="backdrop" data-index="3">
       <div class="modal favourites-modal">
-        <div class="favourites-modal__shadow">
-          <div class="modal__header favourites-modal__header">
+        <div class="modal__wrap">
+          <div
+            class="modal__header modal__header--white favourites-modal__border"
+          >
             <svg class="favourites-icon" width="25" height="24">
               <use href="/images/icons.svg#icon-heart"></use>
             </svg>
@@ -971,15 +983,19 @@
             <ul class="favourites-modal__list">
               <li class="favourites-modal__item">
                 <article class="card">
-                  <a class="card__link" href="#">
-                    <img
-                      class="card__img"
-                      src="/images/initial-pendant@2x.jpg"
-                      alt="bracelets"
-                    />
+                  <a class="card__link" href="/catalog/index.html">
+                    <picture>
+                      <source srcset="/images/catalog-charms-1.webp" type="image/webp" />
+                      <img
+                        class="card__img"
+                        src="/images/catalog-charms-1.jpg"
+                        alt="favorites goods"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                   <h2 class="card__title">
-                    <a href="#">CORNICELLO CHARM</a>
+                    <a href="/catalog/index.html">CORNICELLO CHARM</a>
                   </h2>
                   <span class="card__price">$90.00</span>
                 </article>
@@ -987,15 +1003,39 @@
 
               <li class="favourites-modal__item">
                 <article class="card">
-                  <a class="card__link" href="#">
-                    <img
-                      class="card__img"
-                      src="/images/initial-pendant@2x.jpg"
-                      alt="bracelets"
-                    />
+                  <a class="card__link" href="/catalog/index.html">
+                    <picture>
+                      <source srcset="/images/catalog-charms-2.webp" type="image/webp" />
+                      <img
+                        class="card__img"
+                        src="/images/catalog-charms-2.jpg"
+                        alt="favorites goods"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                   <h2 class="card__title">
-                    <a href="#">CORNICELLO CHARM</a>
+                    <a href="/catalog/index.html">KEY CHARM</a>
+                  </h2>
+                  <span class="card__price">$80.00</span>
+                </article>
+              </li>
+
+              <li class="favourites-modal__item">
+                <article class="card">
+                  <a class="card__link" href="/catalog/index.html">
+                    <picture>
+                      <source srcset="/images/catalog-charms-3.webp" type="image/webp" />
+                      <img
+                        class="card__img"
+                        src="/images/catalog-charms-3.jpg"
+                        alt="favorites goods"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </a>
+                  <h2 class="card__title">
+                    <a href="/catalog/index.html">GLOBE CHARM</a>
                   </h2>
                   <span class="card__price">$90.00</span>
                 </article>
@@ -1003,65 +1043,81 @@
 
               <li class="favourites-modal__item">
                 <article class="card">
-                  <a class="card__link" href="#">
-                    <img
-                      class="card__img"
-                      src="/images/initial-pendant@2x.jpg"
-                      alt="bracelets"
-                    />
+                  <a class="card__link" href="/catalog/index.html">
+                    <picture>
+                      <source srcset="/images/catalog-earrings-1.webp" type="image/webp" />
+                      <img
+                        class="card__img"
+                        src="/images/catalog-earrings-1.jpg"
+                        alt="favorites goods"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                   <h2 class="card__title">
-                    <a href="#">CORNICELLO CHARM</a>
+                    <a href="/catalog/index.html">CHAIN DROPS</a>
                   </h2>
-                  <span class="card__price">$90.00</span>
+                  <span class="card__price">$40.00</span>
                 </article>
               </li>
 
               <li class="favourites-modal__item">
                 <article class="card">
-                  <a class="card__link" href="#">
-                    <img
-                      class="card__img"
-                      src="/images/initial-pendant@2x.jpg"
-                      alt="bracelets"
-                    />
+                  <a class="card__link" href="/catalog/index.html">
+                    <picture>
+                      <source srcset="/images/catalog-necklaces-1.webp" type="image/webp" />
+                      <img
+                        class="card__img"
+                        src="/images/catalog-necklaces-1.jpg"
+                        alt="favorites goods"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                   <h2 class="card__title">
-                    <a href="#">CORNICELLO CHARM</a>
+                    <a href="/catalog/index.html">OPAL HEART</a>
                   </h2>
-                  <span class="card__price">$90.00</span>
+                  <span class="card__price">$100.00</span>
                 </article>
               </li>
 
               <li class="favourites-modal__item">
                 <article class="card">
-                  <a class="card__link" href="#">
-                    <img
-                      class="card__img"
-                      src="/images/initial-pendant@2x.jpg"
-                      alt="bracelets"
-                    />
+                  <a class="card__link" href="/catalog/index.html">
+                    <picture>
+                      <source srcset="/images/catalog-bracelets-1.webp" type="image/webp" />
+                      <img
+                        class="card__img"
+                        src="/images/catalog-bracelets-1.jpg"
+                        alt="favorites goods"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                   <h2 class="card__title">
-                    <a href="#">CORNICELLO CHARM</a>
+                    <a href="/catalog/index.html">LEAFY CHAIN</a>
                   </h2>
-                  <span class="card__price">$90.00</span>
+                  <span class="card__price">$60.00</span>
                 </article>
               </li>
 
               <li class="favourites-modal__item">
                 <article class="card">
-                  <a class="card__link" href="#">
-                    <img
-                      class="card__img"
-                      src="/images/initial-pendant@2x.jpg"
-                      alt="bracelets"
-                    />
+                  <a class="card__link" href="/catalog/index.html">
+                    <picture>
+                      <source srcset="/images/catalog-rings-1.webp" type="image/webp" />
+                      <img
+                        class="card__img"
+                        src="/images/catalog-rings-1.jpg"
+                        alt="favorites goods"
+                        loading="lazy"
+                      />
+                    </picture>
                   </a>
                   <h2 class="card__title">
-                    <a href="#">CORNICELLO CHARM</a>
+                    <a href="/catalog/index.html">ROSE RING</a>
                   </h2>
-                  <span class="card__price">$90.00</span>
+                  <span class="card__price">$100.00</span>
                 </article>
               </li>
             </ul>

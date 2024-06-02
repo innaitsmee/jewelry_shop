@@ -45,24 +45,23 @@
 
   &__location {
     display: none;
-    padding: 24px 0;
-    cursor: pointer;
-
-    &:hover > .header-icon-location {
-      fill: #ce9c80;
-    }
-
-    &:hover .dropdown {
-      display: block;
-    }
 
     @media screen and (min-width: $bp-desktop) {
       display: block;
+      padding: 24px 0;
+      cursor: pointer;
+
+      &:hover > .header-icon-location {
+        fill: var(--color-brand-light-hover);
+      }
+
+      &:hover .dropdown {
+        display: block;
+      }
     }
   }
 
   //header nav
-
   &__nav {
     display: none;
 
@@ -82,12 +81,15 @@
     @include adaptiveMid(font-size, 15, 17);
     flex-shrink: 0;
     padding: 29px 0;
-    cursor: pointer;
 
     @media screen and (min-width: $bp-tablet) {
       &:hover > .header__link {
         color: var(--color-brand);
       }
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      cursor: pointer;
     }
   }
 
@@ -108,7 +110,6 @@
 
   &__actions-item {
     &--mob {
-      display: block;
       @media screen and (min-width: $bp-tablet) {
         display: none;
       }
@@ -116,7 +117,6 @@
 
     &--tablet {
       display: none;
-
       @media screen and (min-width: $bp-tablet) {
         display: block;
       }
@@ -124,7 +124,6 @@
 
     &--desktop {
       display: none;
-
       @media screen and (min-width: $bp-desktop) {
         display: block;
       }
@@ -133,9 +132,8 @@
 
   &__btn {
     &:hover > .header-icon {
-      //зробити заливку для фейворіт
       @media screen and (min-width: $bp-tablet) {
-        fill: #b18165;
+        fill: var(--color-brand);
       }
     }
 
@@ -165,4 +163,3 @@
     }
   }
 }
-

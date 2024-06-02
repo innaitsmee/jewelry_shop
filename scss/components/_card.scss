@@ -1,6 +1,6 @@
 .card {
   &__link {
-    /*height: 238px;*/
+    //height: 238px;
     width: 100%;
     margin-bottom: 12px;
     padding-top: 109%; /*щоб фото не змінювали висоту при зміні екрану*/
@@ -16,8 +16,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      right: 0;
-      bottom: 0;
+      width: 100%;
+      height: 100%;
       background-color: lightgray;
       opacity: 15%;
       transition: background-color .3s, opacity .3s;
@@ -25,10 +25,12 @@
   }
 
   &__img {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
     position: absolute;
     top: 0;
-   // left: 0;
+    left: 0;
   }
 
   &__title {
@@ -60,4 +62,3 @@
 }
 
 //там де опасіті краще замін на rgba
-//з фото передивитись мб там треба обджект фіт

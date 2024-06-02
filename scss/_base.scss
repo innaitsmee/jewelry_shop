@@ -5,11 +5,10 @@
 }
 
 body {
-  /*add font-size, color, bg-color with various*/
   margin: 0;
   font-family: "Karla", sans-serif;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: var(--color-standard-white);
 }
 
 h1,

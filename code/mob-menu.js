@@ -1,15 +1,15 @@
-import toggle from "./toggle-func.js";
+import toggleFunc from "./toggle-func.js";
 
 const mobMenu = document.querySelector(".mobile-menu");
 
-let disableScroll = () => document.body.classList.toggle("scroll-disabled");
+let disableScroll = () => document.body.classList.toggleFunc("scroll-disabled");
 
 document
   .querySelector(".menu-btn-open")
-  .addEventListener("click", () => toggle(mobMenu, "is-open"));
+  .addEventListener("click", () => toggleFunc(mobMenu, "is-open"));
 document
   .querySelector(".menu-btn-close")
-  .addEventListener("click", () => toggle(mobMenu, "is-open"));
+  .addEventListener("click", () => toggleFunc(mobMenu, "is-open"));
 
 document.querySelector(".menu-btn-open").addEventListener("click", disableScroll);
 document.querySelector(".menu-btn-close").addEventListener("click", disableScroll);

@@ -7,28 +7,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--color-bg-dark-rgba);
   opacity: 0;
   visibility: hidden;
-  transition: opacity .3s, visibility .3s;
+  transition: opacity 0.3s, visibility 0.3s;
 
-  @media screen and (min-width:$bp-mobile) {
+  @media screen and (min-width: $bp-mobile) {
     padding: 20px;
   }
 
-  &.active-modal {
+  &.active {
     opacity: 1;
     visibility: visible;
   }
 }
 
+//modal
 .modal {
   width: 100%;
   height: 100%;
-  overflow-y: auto;
+  position: relative;
+  overflow: hidden;
 
-  @media screen and (min-width:$bp-tablet) {
+  @media screen and (min-width: $bp-tablet) {
     border-radius: 4px;
+  }
+
+  &__wrap {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
   }
 
   &__header {
@@ -36,8 +44,19 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
-    @media screen and (min-width:$bp-tablet) {
+    &--white {
+      background-color: var(--color-standard-white);
+    }
+
+    &--gradient {
+      background: var(--color-gradient-light);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
       padding: 35px 44px 32px;
       gap: 26px;
     }
@@ -48,22 +67,21 @@
     transition: fill 0.3s;
 
     &:hover {
-      fill: #c16a6a;
+      fill: var(--color-brand-normal-hover);
     }
 
-    @media screen and (min-width:$bp-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       width: 28px;
     }
   }
 
   &__border {
-    border-bottom: 1px solid #b5ada9;
+    border-bottom: 1px solid var(--color-border-modal);
   }
 
   &__title {
     flex-grow: 1;
-    color: #000;
-    //font-size: 30px;
+    color: var(--color-standard-black);
     margin: 0;
     @include adaptive(font-size, 22, 30);
   }
@@ -71,8 +89,8 @@
   &__form-wrapper {
     padding: 32px 24px;
 
-    @media screen and (min-width:$bp-tablet) {
-      padding: 40px 54px 32px;
+    @media screen and (min-width: $bp-tablet) {
+      padding: 40px 54px;
     }
   }
 
@@ -81,7 +99,7 @@
     flex-direction: column;
     gap: 25px;
 
-    @media screen and (min-width:$bp-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       gap: 40px;
     }
   }
@@ -100,55 +118,54 @@
     background-color: transparent;
     padding: 8px;
     border-radius: 1px;
-    border: 1px solid #d3d3d3;
+    border: 1px solid var(--color-border-form-light);
     font-family: "Karla", sans-serif;
     font-weight: 400;
     @include adaptive(font-size, 14, 19);
 
     &::placeholder {
-      color: #848484;
+      color: var(--color-placeholder-normal-gray);
       @include adaptive(font-size, 14, 19);
     }
 
-    @media screen and (min-width:$bp-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       padding: 16px 20px;
     }
   }
 
   &__link {
-    color: #737373;
+    color: var(--color-link-gray);
     margin-bottom: 1.25em;
     transition: color 0.3s;
     @include adaptive(font-size, 12, 16);
 
     &:hover {
-      color: #ca9577;
+      color: var(--color-brand-link-hover);
     }
   }
 
   &__btn {
     width: 100%;
-    color: #fff;
+    color: var(--color-standard-white);
     text-align: center;
     font-family: "Karla", sans-serif;
     font-weight: 400;
     border-radius: 1px;
-    border: 1px solid #000;
-    background: rgba(0, 0, 0, 0.82);
+    border: 1px solid var(--color-standard-black);
+    background-color: var(--color-btn-dark);
     padding: 10px 0;
     margin-bottom: 0.95em;
     cursor: pointer;
-    transition: background-color .3s,
-    border-color .3s;
+    transition: background-color 0.3s, border-color 0.3s;
     @include adaptive(font-size, 16, 21);
 
-    @media screen and (min-width:$bp-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       padding: 15px 0;
     }
 
     &:hover {
-      background-color: #BD957F;
-      border-color: #BD957F;
+      background-color: var(--color-brand-btn-hover);
+      border-color: var(--color-brand-btn-hover);
     }
   }
 
@@ -158,30 +175,28 @@
   }
 
   &__text {
-    color: #4b4b4b;
+    color: var(--color-text-dark-gray);
     text-align: center;
     margin-bottom: 0.45em;
     @include adaptive(font-size, 16, 18);
   }
 
-  //тут скоріше всього не лінк бо відкр вікно, а не стр
-  &__auth-link {
+  &__auth {
     display: block;
-    color: #b18165;
+    color: var(--color-brand);
     text-align: center;
-    transition: color .3s;
+    transition: color 0.3s;
     @include adaptive(font-size, 16, 18);
 
     &:hover {
-      color: #E3BDA8;
+      color: var(--color-brand-light);
     }
   }
 }
 
+//login modal
 .login-modal {
-  //max-height: 572px;
-
-  @media screen and (min-width:$bp-mobile) {
+  @media screen and (min-width: $bp-mobile) {
     max-height: 572px;
   }
 
@@ -194,16 +209,16 @@
   }
 }
 
+//sign-up modal
 .sign-up-modal {
-  //max-height: 505px;
-  @media screen and (min-width:$bp-mobile) {
+  @media screen and (min-width: $bp-mobile) {
     max-height: 505px;
   }
 
   &__form-inner {
     margin-bottom: 28px;
 
-    @media screen and (min-width:$bp-mobile) {
+    @media screen and (min-width: $bp-mobile) {
       margin-bottom: 38px;
     }
   }
@@ -211,25 +226,83 @@
 
 .login-modal,
 .sign-up-modal {
-  //max-width: 640px;
-  background: linear-gradient(
-      0deg,
-      rgba(219, 219, 219, 0.2) -4.46%,
-      rgba(255, 255, 255, 0) 24.96%
-    ),
-    #fff;
+  background: var(--color-gradient-light);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
 
-  @media  screen and (min-width:$bp-mobile) {
+  @media screen and (min-width: $bp-mobile) {
     max-width: 640px;
+  }
+}
+
+//favorites modal
+.favourites-modal {
+  background-color: var(--color-standard-white);
+  @media screen and (min-width: $bp-mobile) {
+    max-width: 882px;
+    max-height: 603px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--color-gradient);
+    pointer-events: none;
+  }
+
+  &__border {
+    border-bottom: 1px solid var(--color-border-modal-light);
+  }
+
+  &__cards {
+    padding: 32px 28px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 32px 58px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 40px 0;
+    }
+  }
+
+  &__item {
+    flex-basis: 48%;
+
+    @media screen and (min-width: $bp-mobile) {
+      flex-basis: 32%;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 28%;
+    }
   }
 }
 
 .modal-icon {
   width: 24px;
-  fill: #525252;
+  fill: var(--color-icon-dark);
 
-  @media screen and (min-width:$bp-tablet) {
+  @media screen and (min-width: $bp-tablet) {
     width: 32px;
+  }
+}
+
+.favourites-icon {
+  width: 20px;
+  fill: var(--color-icon-light-gray);
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 25px;
   }
 }
