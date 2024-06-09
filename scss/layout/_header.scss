@@ -9,13 +9,25 @@
     border-color: var(--color-border-gray);
   }
 
+  &:before {
+    @media screen and (min-width: $bp-tablet) {
+      content: "";
+      width: 100%;
+      padding-top: 42px;
+      background-color: var(--color-standard-black);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
   &__container {
     width: 100%;
     max-width: 1512px;
     margin: 0 auto;
     padding: 0 24px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
       padding: 0 32px;
     }
   }
@@ -27,18 +39,16 @@
   }
 
   &__block {
-    //mixin mb
-    flex-basis: 40%;
     display: flex;
+    flex-basis: 40%;
     align-items: center;
-    @include adaptiveMid(gap, 20, 40);
+    gap: 20px;
 
     &--right {
       justify-content: flex-end;
     }
 
     @media screen and (min-width: $bp-desktop) {
-      flex-basis: content;
       gap: 44px;
     }
   }
@@ -49,14 +59,15 @@
     @media screen and (min-width: $bp-desktop) {
       display: block;
       padding: 24px 0;
+      color: var(--color-brand-normal-icon);
+      transition: color 0.3s;
+    }
+
+    @media (hover: hover) {
       cursor: pointer;
 
-      &:hover > .header-icon-location {
-        fill: var(--color-brand-light-hover);
-      }
-
-      &:hover .dropdown {
-        display: block;
+      &:hover {
+        color: var(--color-brand-light-hover);
       }
     }
   }
@@ -64,14 +75,12 @@
   //header nav
   &__nav {
     display: none;
-
     @media screen and (min-width: $bp-tablet) {
       display: block;
     }
   }
 
   &__menu {
-    //mixin mb
     display: flex;
     align-items: center;
     @include adaptive(gap, 16, 36);
@@ -80,29 +89,21 @@
   &__item {
     @include adaptiveMid(font-size, 15, 17);
     flex-shrink: 0;
+    color: var(--color-link-dark);
     padding: 29px 0;
+    transition: color 0.3s;
 
-    @media screen and (min-width: $bp-tablet) {
-      &:hover > .header__link {
+    @media (hover: hover) {
+      cursor: pointer;
+      
+      &:hover {
         color: var(--color-brand);
       }
     }
-
-    @media screen and (min-width: $bp-desktop) {
-      cursor: pointer;
-    }
-  }
-
-  &__link {
-    color: var(--color-standard-black);
-    opacity: 0.67;
-    transition: color 0.3s;
   }
 
   //header actions
-
   &__actions {
-    //mixin mb
     display: flex;
     align-items: center;
     @include adaptive(gap, 16, 36);
@@ -131,33 +132,49 @@
   }
 
   &__btn {
-    &:hover > .header-icon {
+    position: relative;
+    color: var(--color-brand-icon);
+    transition: color 0.3s;
+
+    & > svg {
+      width: 16px;
+
       @media screen and (min-width: $bp-tablet) {
-        fill: var(--color-brand);
+        width: 22px;
       }
     }
 
-    &:hover .dropdown {
-      display: block;
+    & > .cart-circle {
+      display: none;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: var(--color-brand-icon-hex);
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transition: background-color 0.3s;
+      }
+    }
+
+    @media (hover: hover) { //hover for btn
+      &:hover {
+        color: var(--color-brand);
+      }
+
+      &:hover > .cart-circle {
+        background-color: var(--color-brand-icon-super-light);
+      }
     }
   }
 
-  &:before {
-    @media screen and (min-width: $bp-tablet) {
-      content: "";
-      width: 100%;
-      padding-top: 42px;
-      background-color: var(--color-standard-black);
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-
-  //mobile
-
+  //mob
   &__burger {
-    display: block;
+    color: var(--color-brand-icon);
+
     @media screen and (min-width: $bp-tablet) {
       display: none;
     }

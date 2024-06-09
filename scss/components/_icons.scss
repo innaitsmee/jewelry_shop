@@ -1,34 +1,5 @@
-.header-icon,
-.cart-icon {
-  fill: #705b4f;
-  width: 16px;
-  transition: fill .3s;
-  
 
-  @media screen and (min-width: $bp-tablet) {
-    width: 22px;
-  }
-}
 
-.header-icon-location {
-  fill: #82746c;
-  width: 26px;
-  transition: fill .3s;
-}
-
-.header-icon-search {
-  fill: #705b4f;
-  width: 17px;
-}
-
-.burger-icon {
-  display: block;
-  fill: #705b4f;
-}
-
-.icon-block {
-  display: block;
-}
 
 .footer-icon {
   fill: #000000;

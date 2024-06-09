@@ -12,17 +12,17 @@
       <div class="header__container">
         <div class="header__flex">
           <div class="header__block">
-            <div class="header__location">
-              <svg class="header-icon-location" width="26" height="26">
+            <div class="header__location open-dropdown">
+              <svg width="26" height="26">
                 <use href="./images/icons.svg#icon-location"></use>
               </svg>
 
-              <div class="dropdown open-dropdown">
+              <div class="dropdown location-dropdown">
                 <div class="dropdown__container">
                   <div class="dropdown__flex">
-                    <div class="dropdown__inner">
-                      <div class="dropdown__block">
-                        <h3 class="dropdown__title dropdown__title--margin">
+                    <div class="location-dropdown__inner">
+                      <div class="location-dropdown__block">
+                        <h3 class="dropdown__title dropdown__list-title">
                           Main Locations
                         </h3>
                         <ul class="dropdown__list">
@@ -41,14 +41,11 @@
                         </ul>
                       </div>
 
-                      <div class="dropdown__block">
-                        <h3 class="dropdown__title dropdown__form-title">
+                      <div class="location-dropdown__block">
+                        <h3 class="dropdown__title location-dropdown__title">
                           Find nearest stores
                         </h3>
-                        <form
-                          class="dropdown-form"
-                          name="dropdown-store-search"
-                        >
+                        <form class="dropdown-form" name="dropdown-search-form">
                           <div class="dropdown-form__fieldset">
                             <input
                               class="dropdown-form__input"
@@ -67,7 +64,7 @@
                             type="submit"
                           >
                             <svg
-                              class="dropdown-form__icon header-icon"
+                              class="dropdown-form__icon"
                               width="17"
                               height="17"
                             >
@@ -78,9 +75,9 @@
                       </div>
                     </div>
 
-                    <div class="dropdown__map-wrapper">
+                    <div class="location-dropdown__map-wrapper">
                       <iframe
-                        class="dropdown__map"
+                        class="location-dropdown__map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380514.49363858043!2d-88.06160962171495!3d41.83326169479497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1706126645477!5m2!1sru!2sua"
                         allowfullscreen=""
                         loading="lazy"
@@ -95,13 +92,13 @@
             <nav class="header__nav">
               <ul class="header__menu">
                 <li class="header__item open-dropdown">
-                  <a class="header__link" href="#">JEWELRY</a>
+                  <a href="#">JEWELRY</a>
 
                   <div class="dropdown">
                     <div class="dropdown__container">
                       <div class="dropdown__flex">
                         <div class="dropdown__list-wrap">
-                          <h3 class="dropdown__title dropdown__title--margin">
+                          <h3 class="dropdown__title dropdown__list-title">
                             Categories
                           </h3>
                           <ul class="dropdown__list">
@@ -124,7 +121,7 @@
                         </div>
 
                         <div class="dropdown__list-wrap">
-                          <h3 class="dropdown__title dropdown__title--margin">
+                          <h3 class="dropdown__title dropdown__list-title">
                             Extra 1
                           </h3>
                           <ul class="dropdown__list">
@@ -150,17 +147,15 @@
                   </div>
                 </li>
                 <li class="header__item">
-                  <a class="header__link" href="/new-collection/index.html"
-                    >NEW RELEASES</a
-                  >
+                  <a href="/new-collection/index.html">NEW RELEASES</a>
                 </li>
                 <li class="header__item open-dropdown">
-                  <a class="header__link" href="/gifts/index.html">GIFTS</a>
+                  <a href="/gifts/index.html">GIFTS</a>
                   <div class="dropdown">
                     <div class="dropdown__container">
                       <div class="dropdown__flex">
                         <div class="dropdown__list-wrap">
-                          <h3 class="dropdown__title dropdown__title--margin">
+                          <h3 class="dropdown__title dropdown__list-title">
                             Shop Gifts
                           </h3>
                           <ul class="dropdown__list">
@@ -189,7 +184,7 @@
                         </div>
 
                         <div class="dropdown__list-wrap">
-                          <h3 class="dropdown__title dropdown__title--margin">
+                          <h3 class="dropdown__title dropdown__list-title">
                             Extra 1
                           </h3>
                           <ul class="dropdown__list">
@@ -218,7 +213,7 @@
             </nav>
 
             <button class="button header__burger menu-btn-open" type="button">
-              <svg class="burger-icon" width="22" height="18">
+              <svg width="22" height="18">
                 <use href="./images/icons.svg#icon-burger"></use>
               </svg>
             </button>
@@ -502,10 +497,10 @@
 
           <div class="header__block header__block--right">
             <!--search-->
-            <form class="header-search" name="search-form">
-              <div class="header-search__input-wrapper">
+            <form class="header-search" name="header-search-form">
+              <div class="header-search__form-field">
                 <input
-                  class="header-search__input"
+                  class="header-search__input header-input"
                   type="text"
                   name="header-search"
                   id="header-search"
@@ -518,21 +513,24 @@
                 </label>
               </div>
               <button class="button header-search__btn" type="submit">
-                <!--класи іконок мб треба буде поміняти-->
-                <svg
-                  class="header-icon-search icon-block"
-                  width="17"
-                  height="17"
-                >
+                <svg width="17" height="17">
                   <use href="./images/icons.svg#icon-search"></use>
+                </svg>
+              </button>
+              <button class="button header-search__close search-form-close" type="button">
+                <svg width="17" height="17">
+                  <use href="/images/icons.svg#icon-close"></use>
                 </svg>
               </button>
             </form>
 
             <ul class="header__actions">
               <li class="header__actions-item header__actions-item--mob">
-                <button class="button header__btn" type="button">
-                  <svg class="header-icon icon-block" width="22" height="22">
+                <button
+                  class="button header__btn search-form-open"
+                  type="button"
+                >
+                  <svg width="22" height="22">
                     <use href="./images/icons.svg#icon-search"></use>
                   </svg>
                 </button>
@@ -543,22 +541,22 @@
                   data-index="3"
                   type="button"
                 >
-                  <svg class="header-icon icon-block" width="22" height="22">
+                  <svg width="22" height="22">
                     <use href="./images/icons.svg#icon-favorite"></use>
                   </svg>
                 </button>
               </li>
               <li class="header__actions-item">
                 <button
-                  class="button header__btn modal-btn-open cart"
+                  class="button header__btn modal-btn-open"
                   data-index="2"
                   type="button"
                 >
-                  <svg class="cart-icon" width="22" height="22">
+                  <svg width="22" height="22">
                     <use href="./images/icons.svg#icon-cart"></use>
                   </svg>
-                  <div class="cart__circle"></div>
                   <!--колір кружочка-->
+                  <div class="cart-circle"></div>
                 </button>
               </li>
               <li class="header__actions-item header__actions-item--tablet">
@@ -567,7 +565,7 @@
                   data-index="1"
                   type="button"
                 >
-                  <svg class="header-icon" width="22" height="24">
+                  <svg width="22" height="24">
                     <use href="./images/icons.svg#icon-user"></use>
                   </svg>
                 </button>
@@ -1500,7 +1498,10 @@
                 <article class="card">
                   <a class="card__link" href="/catalog/index.html">
                     <picture>
-                      <source srcset="/images/catalog-charms-1.webp" type="image/webp" />
+                      <source
+                        srcset="/images/catalog-charms-1.webp"
+                        type="image/webp"
+                      />
                       <img
                         class="card__img"
                         src="/images/catalog-charms-1.jpg"
@@ -1520,7 +1521,10 @@
                 <article class="card">
                   <a class="card__link" href="/catalog/index.html">
                     <picture>
-                      <source srcset="/images/catalog-charms-2.webp" type="image/webp" />
+                      <source
+                        srcset="/images/catalog-charms-2.webp"
+                        type="image/webp"
+                      />
                       <img
                         class="card__img"
                         src="/images/catalog-charms-2.jpg"
@@ -1540,7 +1544,10 @@
                 <article class="card">
                   <a class="card__link" href="/catalog/index.html">
                     <picture>
-                      <source srcset="/images/catalog-charms-3.webp" type="image/webp" />
+                      <source
+                        srcset="/images/catalog-charms-3.webp"
+                        type="image/webp"
+                      />
                       <img
                         class="card__img"
                         src="/images/catalog-charms-3.jpg"
@@ -1560,7 +1567,10 @@
                 <article class="card">
                   <a class="card__link" href="/catalog/index.html">
                     <picture>
-                      <source srcset="/images/catalog-earrings-1.webp" type="image/webp" />
+                      <source
+                        srcset="/images/catalog-earrings-1.webp"
+                        type="image/webp"
+                      />
                       <img
                         class="card__img"
                         src="/images/catalog-earrings-1.jpg"
@@ -1580,7 +1590,10 @@
                 <article class="card">
                   <a class="card__link" href="/catalog/index.html">
                     <picture>
-                      <source srcset="/images/catalog-necklaces-1.webp" type="image/webp" />
+                      <source
+                        srcset="/images/catalog-necklaces-1.webp"
+                        type="image/webp"
+                      />
                       <img
                         class="card__img"
                         src="/images/catalog-necklaces-1.jpg"
@@ -1600,7 +1613,10 @@
                 <article class="card">
                   <a class="card__link" href="/catalog/index.html">
                     <picture>
-                      <source srcset="/images/catalog-bracelets-1.webp" type="image/webp" />
+                      <source
+                        srcset="/images/catalog-bracelets-1.webp"
+                        type="image/webp"
+                      />
                       <img
                         class="card__img"
                         src="/images/catalog-bracelets-1.jpg"
@@ -1620,7 +1636,10 @@
                 <article class="card">
                   <a class="card__link" href="/catalog/index.html">
                     <picture>
-                      <source srcset="/images/catalog-rings-1.webp" type="image/webp" />
+                      <source
+                        srcset="/images/catalog-rings-1.webp"
+                        type="image/webp"
+                      />
                       <img
                         class="card__img"
                         src="/images/catalog-rings-1.jpg"
@@ -1640,6 +1659,7 @@
         </div>
       </div>
     </div>
+    <script type="module" src="/code/search-form.js"></script>
     <script type="module" src="/code/mob-menu.js"></script>
     <script type="module" src="/code/modal.js"></script>
   </body>

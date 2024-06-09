@@ -1,13 +1,14 @@
 .dropdown {
-  display: none;
   position: absolute;
   z-index: 1;
   top: 100%;
   left: 0;
   width: 100%;
+  max-height: 0;
+  overflow: hidden;
   background-color: var(--color-bg-light);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 24px 0;
+  transition: max-height 0.3s, padding 0.3s;
   cursor: auto;
 
   &__container {
@@ -16,7 +17,7 @@
     margin: 0 auto;
     padding: 0 32px;
 
-    @media screen and (min-width:$bp-desktop) {
+    @media screen and (min-width: $bp-desktop) {
       padding: 0 100px;
     }
   }
@@ -26,19 +27,7 @@
     gap: 20px;
   }
 
-  &__inner {
-    flex-basis: 55%;
-    display: flex;
-    gap: 20px;
-  }
-
-  &__block {
-    //text-align: start;
-    flex-basis: calc((100% - 20px) / 2);
-  }
-
   &__list-wrap {
-    //text-align: start;
     flex-basis: calc((100% - 20px * 4) / 4);
   }
 
@@ -47,25 +36,39 @@
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
     @include adaptiveMid(font-size, 20, 25);
-
-    &--margin {
-    margin-bottom: 0.8em; //20px;
-  }
   }
 
-  &__form-title {
-    margin-bottom: 32px;
+  &__list-title {
+    margin-bottom: 0.8em;
   }
 
   &__item {
+    @include adaptiveMid(font-size, 14, 18);
     color: var(--color-dropdown-gray);
     margin-bottom: 1.12em;
-    transition: color .3s;
-    @include adaptiveMid(font-size, 14, 18);
+    transition: color 0.3s;
 
-    &:hover {
-      color: var(--color-brand);
+    @media (hover: hover) {
+      &:hover {
+        color: var(--color-brand);
+      }
     }
+  }
+}
+
+.location-dropdown {
+  &__inner {
+    display: flex;
+    flex-basis: 55%;
+    gap: 20px;
+  }
+
+  &__block {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+
+  &__title {
+    margin-bottom: 32px;
   }
 
   &__map-wrapper {
@@ -77,9 +80,9 @@
       position: absolute;
       top: 0;
       left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: var(color-dropdown-light-gray);
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-dropdown-light-gray);
       opacity: 0.2;
     }
   }
@@ -87,12 +90,15 @@
   &__map {
     width: 100%;
     height: 100%;
-    border: 1px solid var(color-dropdown-light-gray);
+    border: 1px solid var(--color-dropdown-light-gray);
   }
 }
 
-.open-dropdown:hover .dropdown {
-  display: block;
+.open-dropdown {
+  @media (hover: hover) {
+    &:hover .dropdown {
+      max-height: 1000px;
+      padding: 24px 0;
+    }
+  }
 }
-
-//colors margin ok
