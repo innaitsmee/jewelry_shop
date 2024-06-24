@@ -42,10 +42,13 @@
     display: flex;
     flex-basis: 40%;
     align-items: center;
-    gap: 20px;
 
     &--right {
       justify-content: flex-end;
+    }
+
+    @media screen and (min-width:$bp-tablet) {
+      gap: 20px;
     }
 
     @media screen and (min-width: $bp-desktop) {

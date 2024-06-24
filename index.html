@@ -212,7 +212,7 @@
               </ul>
             </nav>
 
-            <button class="button header__burger menu-btn-open" type="button">
+            <button class="button header__burger mob-menu-open" type="button">
               <svg width="22" height="18">
                 <use href="./images/icons.svg#icon-burger"></use>
               </svg>
@@ -220,7 +220,7 @@
 
             <div class="mobile-menu">
               <button
-                class="button mobile-menu__btn mobile-menu__btn-close menu-btn-close"
+                class="button mobile-menu__btn mobile-menu__btn-close mob-menu-close"
                 type="button"
               >
                 close
@@ -228,7 +228,7 @@
               <ul class="mobile-menu__list mobile-menu__border">
                 <li class="mobile-menu__item">
                   <button
-                    class="button mobile-menu__btn mobile-menu__list-btn"
+                    class="button mobile-menu__btn mobile-menu__list-btn mob-menu-btn"
                     type="button"
                   >
                     <svg width="22" height="22">
@@ -247,7 +247,7 @@
                 </li>
                 <li class="mobile-menu__item">
                   <button
-                    class="button mobile-menu__btn mobile-menu__list-btn"
+                    class="button mobile-menu__btn mobile-menu__list-btn mob-menu-btn"
                     type="button"
                   >
                     <svg width="22" height="22">
@@ -265,7 +265,7 @@
                 </li>
                 <li class="mobile-menu__item">
                   <button
-                    class="button mobile-menu__btn mobile-menu__list-btn"
+                    class="button mobile-menu__btn mobile-menu__list-btn mob-menu-btn"
                     type="button"
                   >
                     <svg width="22" height="22">
@@ -291,7 +291,8 @@
                 </li>
               </ul>
               <button
-                class="button mobile-menu__btn mobile-menu__login"
+                class="button mobile-menu__btn mobile-menu__login modal-btn-open"
+                data-index="1"
                 type="button"
               >
                 Log in
@@ -312,7 +313,8 @@
                 </li>
                 <li>
                   <button
-                    class="button mobile-menu__btn mobile-menu__list-btn"
+                    class="button mobile-menu__btn mobile-menu__list-btn modal-btn-open"
+                    data-index="3"
                     type="button"
                   >
                     <svg width="22" height="22">
@@ -498,7 +500,13 @@
           <div class="header__block header__block--right">
             <!--search-->
             <form class="header-search" name="header-search-form">
-              <div class="header-search__form-field">
+              <div class="header-search__wrap">
+              <button class="button header-search__btn" type="submit">
+                <svg width="17" height="17">
+                  <use href="./images/icons.svg#icon-search"></use>
+                </svg>
+              </button>  
+               <div class="header-search__form-field">
                 <input
                   class="header-search__input header-input"
                   type="text"
@@ -512,16 +520,13 @@
                   >Search
                 </label>
               </div>
-              <button class="button header-search__btn" type="submit">
-                <svg width="17" height="17">
-                  <use href="./images/icons.svg#icon-search"></use>
-                </svg>
-              </button>
               <button class="button header-search__close search-form-close" type="button">
                 <svg width="17" height="17">
                   <use href="/images/icons.svg#icon-close"></use>
                 </svg>
-              </button>
+              </button> 
+              </div>
+              
             </form>
 
             <ul class="header__actions">
@@ -549,7 +554,6 @@
               <li class="header__actions-item">
                 <button
                   class="button header__btn modal-btn-open"
-                  data-index="2"
                   type="button"
                 >
                   <svg width="22" height="22">

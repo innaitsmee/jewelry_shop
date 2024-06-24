@@ -4,12 +4,14 @@
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-bg-dark-rgba);
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
   transition: opacity 0.3s, visibility 0.3s;
 
   @media screen and (min-width: $bp-mobile) {
@@ -19,6 +21,7 @@
   &.active {
     opacity: 1;
     visibility: visible;
+    pointer-events: all;
   }
 }
 

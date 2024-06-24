@@ -42,7 +42,8 @@ img {
   /*object-fit: cover;*/
 }
 
-svg {
+svg,
+svg path {
   display: block;
   fill: currentColor;
 }

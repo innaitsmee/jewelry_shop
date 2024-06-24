@@ -1,16 +1,30 @@
 import toggleFunc from "./toggle-func.js";
+import { headerForm } from "./search-form.js";
 
-const mobMenu = document.querySelector(".mobile-menu");
+const mobMenu = document.querySelector(".mobile-menu"),
+  [...btns] = document.querySelectorAll(".mob-menu-btn"),
+  actionsArr = [
+    document.querySelector(".mob-menu-open"),
+    document.querySelector(".mob-menu-close"),
+  ];
 
-let disableScroll = () => document.body.classList.toggleFunc("scroll-disabled");
+//open/close mob menu
+for (let elem of actionsArr) {
+  elem.addEventListener("click", () => {
+    //if header search form is open we close it
+    if (headerForm.classList.contains("is-active")) {
+      toggleFunc(headerForm, "is-active");
+    }
+    toggleFunc(mobMenu, "is-open");
+    toggleFunc(document.querySelector("body"), "scroll-disabled");
+  });
+}
 
-document
-  .querySelector(".menu-btn-open")
-  .addEventListener("click", () => toggleFunc(mobMenu, "is-open"));
-document
-  .querySelector(".menu-btn-close")
-  .addEventListener("click", () => toggleFunc(mobMenu, "is-open"));
+//open sublist
+btns.forEach((elem) => {
+  elem.addEventListener("click", () => {
+    toggleFunc(elem.nextElementSibling, "active-list");
+  });
+});
 
-document.querySelector(".menu-btn-open").addEventListener("click", disableScroll);
-document.querySelector(".menu-btn-close").addEventListener("click", disableScroll);
-
+export { mobMenu };

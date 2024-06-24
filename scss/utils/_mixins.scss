@@ -2,6 +2,7 @@ $minWidth: 390;
 $midWidth: 768;
 $maxWidth: 1512;
 
+//adaptive property w minWidth / maxWidth
 @mixin adaptive($property, $minValue, $maxValue) {
   #{$property}: calc(
     #{$minValue + px} + ($maxValue - $minValue) * ((100vw - #{$minWidth + px}) /
@@ -17,7 +18,7 @@ $maxWidth: 1512;
   }
 }
 
-//
+//adaptive property w midWidth / maxWidth
 @mixin adaptiveMid($property, $minValue, $maxValue) {
   #{$property}: calc(
     #{$minValue + px} + ($maxValue - $minValue) * ((100vw - #{$midWidth + px}) /
@@ -31,4 +32,15 @@ $maxWidth: 1512;
   @media screen and (min-width: #{$maxWidth + px}) {
     #{$property}: $maxValue + px;
   }
+}
+
+//for hidden objects
+@mixin isHidden($value: 100%) {
+  position: absolute;
+  z-index: 1;
+  top: $value;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;  
 }
