@@ -23,7 +23,7 @@ for (let elem of actionsArr) {
 //open sublist
 btns.forEach((elem) => {
   elem.addEventListener("click", () => {
-    toggleFunc(elem.nextElementSibling, "active-list");
+    toggleFunc(elem.nextElementSibling, "active-sublist");
   });
 });
 

@@ -1,6 +1,9 @@
 :root {
   --color-standard-black: #000;
   --color-standard-white: #fff;
+  --color-rgba-10: rgba(255, 255, 255, 0.1);
+  --color-dark-rgba-30: rgba(0, 0, 0, 0.3);
+  --color-white-rgba-80: rgba(255, 255, 255, 0.8);
   --color-text-gray: #727272;
   --color-copyright-normal: #646464;
   --color-copyright: #626262;
@@ -19,7 +22,7 @@
   --color-bg-normal: #efebe8;
   --color-bg-gray: #e3dcd8;
   --color-bg-dark: #0f0d0d;
-  --color-bg-dark-rgba: rgba(0, 0, 0, 0.3);
+  --color-bg-dark-rgba-60: rgba(0, 0, 0, 0.6);
   --color-border-light: #e8dcd5;
   --color-border-gray: #bbb3af;
   --color-border-light-gray: #bfbfbf;

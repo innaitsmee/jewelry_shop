@@ -1,14 +1,10 @@
 .mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 96vw;
-  height: 100vh;
+  @include position(fixed, 96vw, 100vh);
   z-index: 999;
   padding: 50px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--color-bg-dark-rgba-60);
   backdrop-filter: blur(10px);
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 0 10px var(--color-dark-rgba-30);
   overflow-y: auto; //scroll
   transform: translateX(-110%);
   transition: transform 0.3s;
@@ -28,11 +24,11 @@
   }
 
   &__btn-close {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-white-rgba-80);
     position: absolute;
     top: 20px;
     right: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid var(--color-white-rgba-80);
   }
 
   &__list {
@@ -45,7 +41,7 @@
     overflow: hidden;
     transition: max-height 0.3s;
 
-    &.active-list {
+    &.active-sublist {
       max-height: 1000px;
     }
   }
@@ -65,7 +61,7 @@
     margin-bottom: 24px;
     padding: 22px 0;
     font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--color-rgba-10);
     border: 1px solid var(--color-mob-dark-rgba);
   }
 
@@ -78,15 +74,15 @@
     color: var(--color-mob-light);
   }
 
-  &__link,
-  &__list-btn {
+  &__list-btn,
+  &__link {
     font-size: 16px;
     padding: 4px 6px;
     transition: color 0.3s, background-color 0.3s;
 
     &:active {
-      color: rgba(255, 255, 255, 0.8);
-      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--color-white-rgba-80);
+      background-color: var(--color-rgba-10);
     }
   }
 
@@ -128,5 +124,3 @@
     border-bottom: 1px solid var(--color-mob-dark-rgba);
   }
 }
-
-//color margin ok
