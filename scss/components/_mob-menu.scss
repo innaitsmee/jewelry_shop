@@ -39,7 +39,7 @@
   &__sublist {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s;
+    transition: max-height .3s;
 
     &.active-sublist {
       max-height: 1000px;

@@ -1,5 +1,5 @@
 .header {
-  padding: 60px 0 32px;
+  padding: 60px 0 24px;
   background-color: var(--color-standard-white);
   border-bottom: 1px solid var(--color-border-light);
   position: relative;
@@ -86,13 +86,14 @@
   &__menu {
     display: flex;
     align-items: center;
-    @include adaptive(gap, 16, 36);
+    @include adaptiveMid(gap, 16, 36);
   }
 
   &__item {
     @include adaptiveMid(font-size, 15, 17);
     flex-shrink: 0;
     color: var(--color-link-dark);
+    text-transform: uppercase;
     padding: 29px 0;
     transition: color 0.3s;
 
@@ -109,7 +110,7 @@
   &__actions {
     display: flex;
     align-items: center;
-    @include adaptive(gap, 16, 36);
+    @include adaptiveMid(gap, 16, 36);
   }
 
   &__actions-item {
@@ -182,4 +183,17 @@
       display: none;
     }
   }
+}
+
+//if touch screen on tablet/desktop
+.touch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+    & > .arrow {
+      border-top: 8px solid var(--color-link-dark);
+      border-left: 6px solid var(--color-standard-white);
+      border-right: 6px solid var(--color-standard-white);
+    }
 }
