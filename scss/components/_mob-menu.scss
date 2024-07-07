@@ -39,10 +39,15 @@
   &__sublist {
     max-height: 0;
     overflow: hidden;
-    transition: max-height .3s;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
 
     &.active-sublist {
-      max-height: 1000px;
+      max-height: 50vh;
+      opacity: 1;
+      visibility: visible;
+      overflow-x: auto;
     }
   }
 

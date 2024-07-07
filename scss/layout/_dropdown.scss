@@ -6,11 +6,6 @@
   transition: max-height 0.3s, padding 0.3s;
   cursor: auto;
 
-  &.active-dropdown {
-    max-height: 1000px;
-    padding: 24px 0;
-  }
-
   &__container {
     width: 100%;
     max-width: 1512px;
@@ -97,4 +92,10 @@
       padding: 24px 0;
     }
   }
+}
+
+//for touch screen tablet/laptop
+.active-dropdown {
+  max-height: 1000px;
+  padding: 24px 0;
 }

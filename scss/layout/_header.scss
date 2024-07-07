@@ -47,7 +47,7 @@
       justify-content: flex-end;
     }
 
-    @media screen and (min-width:$bp-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       gap: 20px;
     }
 
@@ -99,7 +99,7 @@
 
     @media (hover: hover) {
       cursor: pointer;
-      
+
       &:hover {
         color: var(--color-brand);
       }
@@ -164,7 +164,8 @@
       }
     }
 
-    @media (hover: hover) { //hover for btn
+    @media (hover: hover) {
+      //hover for btn
       &:hover {
         color: var(--color-brand);
       }
@@ -188,12 +189,22 @@
 //if touch screen on tablet/desktop
 .touch {
   display: flex;
-  align-items: center;
-  gap: 6px;
 
-    & > .arrow {
-      border-top: 8px solid var(--color-link-dark);
-      border-left: 6px solid var(--color-standard-white);
-      border-right: 6px solid var(--color-standard-white);
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+
+    &.rotate > .arrow {
+      transform: rotate(180deg);
     }
+  }
+}
+
+//arrow icon
+.arrow {
+  border-top: 8px solid var(--color-link-dark);
+  border-left: 6px solid var(--color-standard-white);
+  border-right: 6px solid var(--color-standard-white);
+  transition: border-top-color, 0.3s;
 }
