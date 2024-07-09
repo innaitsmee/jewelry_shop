@@ -23,7 +23,16 @@ for (let elem of actionsArr) {
 //open sublist
 btns.forEach((elem) => {
   elem.addEventListener("click", () => {
+    //toggle class at sublist after clicked btn
     toggleFunc(elem.nextElementSibling, "active-sublist");
+    //open items of sublist
+    [...elem.nextElementSibling.children].forEach((e, i) => {
+      toggleFunc(e, "active-sub-item");
+      if (e.classList.contains("active-sub-item")) {
+        //add delay for open item step by step
+        e.style.transitionDelay = `.${i}s`;
+      } else e.removeAttribute("style");
+    });
   });
 });
 

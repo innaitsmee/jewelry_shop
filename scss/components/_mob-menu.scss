@@ -41,13 +41,27 @@
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s, visibility 0.5s;
 
     &.active-sublist {
-      max-height: 50vh;
+      max-height: 300px;
       opacity: 1;
       visibility: visible;
-      overflow-x: auto;
+      overflow-y: auto;
+      transition: max-height 0.5s, opacity 0.5s, visibility 0.5s;
+    }
+  }
+
+  &__sub-item {
+    padding-left: 20px;
+    line-height: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    &.active-sub-item {
+      line-height: normal;
+      opacity: 1;
+      visibility: visible;
+      transition: line-height 0.5s, opacity 0.5s, visibility 0.5s;
     }
   }
 
