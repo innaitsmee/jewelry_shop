@@ -1,23 +1,18 @@
 @import './utils/fonts';
-@import './utils/mixins';
-@import './utils/texts';
 @import './utils/variables';
 @import './base';
+@import './utils/mixins';
+@import './utils/texts';
 @import './utils/utils';
 
-@import './components/block-border';
-@import './components/icons';
-@import './components/image';
-@import './components/buttons';
+@import './components/block-border'; //delete
+@import './components/image'; //mb del
+@import './components/buttons'; //ok
 @import './components/card';
-@import './components/category-card';
 @import './components/checkbox';
-@import './components/dropdown-search-form';
-@import './components/footer-form';
 @import './components/forms';
-@import './components/logo';
-@import './components/mob-menu';
-@import './components/search-form';
+@import './components/logo'; //ok
+@import './components/mob-menu'; //ok
 @import './components/title';
 
 @import './layout/about-us-preview-section';
@@ -32,7 +27,7 @@
 @import './layout/footer-copyright';
 @import './layout/footer';
 @import './layout/gift-section';
-@import './layout/header';
+@import './layout/header'; //ok
 @import './layout/hero-section';
 @import './layout/inspo-mobile-section';
 @import './layout/mobile-section';

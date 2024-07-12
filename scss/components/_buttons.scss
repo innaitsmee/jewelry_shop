@@ -2,28 +2,27 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: color 0.3s, border-color 0.3s, background-color 0.3s;
 
   &--white {
-    color: #fff;
-    border: 1px solid #fff;
-    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+    color: var(--color-standard-white);
+    border: 1px solid var(--color-standard-white);
 
     &:hover {
-      color: #000;
-      border-color: rgba(255, 255, 255, 0.83);
-      background-color: rgba(255, 255, 255, 0.83);
+      color: var(--color-standard-black);
+      border-color: var(--color-white-rgba-83);
+      background-color: var(--color-white-rgba-83);
     }
   }
 
   &--black {
-    color: #000000;
-    border: 1px solid #000;
-    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+    color: var(--color-standard-black);
+    border: 1px solid var(--color-standard-black);
 
     &:hover {
-      color: #e3e3e3;
-      border-color: rgba(0, 0, 0, 0.9);
-      background-color: rgba(0, 0, 0, 0.9);
+      color: var(--color-light-hex);
+      border-color: var(--color-dark-rgba-90);
+      background-color: var(--color-dark-rgba-90);
     }
   }
 }
