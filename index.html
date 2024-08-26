@@ -8,770 +8,812 @@
     <link rel="stylesheet" href="./scss/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="header__flex">
-          <div class="header__block">
-            <div class="header__location open-dropdown">
-              <svg width="26" height="26">
-                <use href="./images/icons.svg#icon-location"></use>
-              </svg>
+    <div class="smooth-wrapper">
+      <div class="smooth-content">
+        <header class="header">
+          <div class="main-container header__container">
+            <div class="header__flex">
+              <div class="header__block">
+                <div class="header__location open-dropdown">
+                  <svg width="26" height="26">
+                    <use href="./images/icons.svg#icon-location"></use>
+                  </svg>
 
-              <div class="dropdown location-dropdown">
-                <div class="dropdown__container">
-                  <div class="dropdown__flex">
-                    <div class="location-dropdown__inner">
-                      <div class="location-dropdown__block">
-                        <h3 class="dropdown__title dropdown__list-title">
-                          Main Locations
-                        </h3>
-                        <ul class="dropdown__list">
-                          <li class="dropdown__item">
-                            <a href="#">Chicago, IL</a>
-                          </li>
-                          <li class="dropdown__item">
-                            <a href="#">San Francisco, CA</a>
-                          </li>
-                          <li class="dropdown__item">
-                            <a href="#">New York, NY</a>
-                          </li>
-                          <li class="dropdown__item">
-                            <a href="#">Seattle, WA</a>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div class="location-dropdown__block">
-                        <h3 class="dropdown__title location-dropdown__title">
-                          Find nearest stores
-                        </h3>
-                        <form class="dropdown-form" name="dropdown-search-form">
-                          <div class="dropdown-form__fieldset">
-                            <input
-                              class="dropdown-form__input"
-                              type="text"
-                              name="dropdown-search"
-                              id="dropdown-search"
-                              placeholder="City / State / ZIP"
-                            />
-                            <label
-                              class="dropdown-form__label visually-hidden"
-                              for="dropdown-search"
-                            ></label>
+                  <div class="dropdown location-dropdown">
+                    <div class="dropdown__container">
+                      <div class="dropdown__flex">
+                        <div class="location-dropdown__inner">
+                          <div class="location-dropdown__block">
+                            <h3 class="dropdown__title dropdown__list-title">
+                              Main Locations
+                            </h3>
+                            <ul class="dropdown__list">
+                              <li class="dropdown__item">
+                                <a href="#">Chicago, IL</a>
+                              </li>
+                              <li class="dropdown__item">
+                                <a href="#">San Francisco, CA</a>
+                              </li>
+                              <li class="dropdown__item">
+                                <a href="#">New York, NY</a>
+                              </li>
+                              <li class="dropdown__item">
+                                <a href="#">Seattle, WA</a>
+                              </li>
+                            </ul>
                           </div>
-                          <button
-                            class="button dropdown-form__btn"
-                            type="submit"
-                          >
-                            <svg width="17" height="17">
-                              <use href="/images/icons.svg#icon-search"></use>
-                            </svg>
-                          </button>
-                        </form>
+
+                          <div class="location-dropdown__block">
+                            <h3
+                              class="dropdown__title location-dropdown__title"
+                            >
+                              Find nearest stores
+                            </h3>
+                            <form
+                              class="dropdown-form"
+                              name="dropdown-search-form"
+                            >
+                              <div class="dropdown-form__fieldset">
+                                <input
+                                  class="dropdown-form__input"
+                                  type="text"
+                                  name="dropdown-search"
+                                  id="dropdown-search"
+                                  placeholder="City / State / ZIP"
+                                />
+                                <label
+                                  class="dropdown-form__label visually-hidden"
+                                  for="dropdown-search"
+                                ></label>
+                              </div>
+                              <button
+                                class="button dropdown-form__btn"
+                                type="submit"
+                              >
+                                <svg width="17" height="17">
+                                  <use
+                                    href="/images/icons.svg#icon-search"
+                                  ></use>
+                                </svg>
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+
+                        <div class="location-dropdown__map-wrapper">
+                          <iframe
+                            class="location-dropdown__map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380514.49363858043!2d-88.06160962171495!3d41.83326169479497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1706126645477!5m2!1sru!2sua"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                          ></iframe>
+                        </div>
                       </div>
                     </div>
+                  </div>
+                </div>
 
-                    <div class="location-dropdown__map-wrapper">
-                      <iframe
-                        class="location-dropdown__map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380514.49363858043!2d-88.06160962171495!3d41.83326169479497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2z0KfQuNC60LDQs9C-LCDQmNC70LvQuNC90L7QudGBLCDQodCo0JA!5e0!3m2!1sru!2sua!4v1706126645477!5m2!1sru!2sua"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                      ></iframe>
+                <nav class="header__nav">
+                  <ul class="header__menu">
+                    <li class="header__item open-dropdown">
+                      <a href="#">JEWELRY</a>
+
+                      <div class="dropdown">
+                        <div class="dropdown__container">
+                          <div class="dropdown__flex">
+                            <div class="dropdown__list-wrap">
+                              <h3 class="dropdown__title dropdown__list-title">
+                                Categories
+                              </h3>
+                              <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                  <a href="./catalog/index.html">Necklaces</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Earrings</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Bracelets</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Rings</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Charms</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="dropdown__list-wrap">
+                              <h3 class="dropdown__title dropdown__list-title">
+                                Extra 1
+                              </h3>
+                              <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                  <a href="#">Lorem ipsum</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Dolor sit</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Amet consectetur</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Adipiscing elit</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Sed do</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="header__item">
+                      <a href="/new-collection/index.html">NEW RELEASES</a>
+                    </li>
+                    <li class="header__item open-dropdown">
+                      <a href="/gifts/index.html">GIFTS</a>
+                      <div class="dropdown">
+                        <div class="dropdown__container">
+                          <div class="dropdown__flex">
+                            <div class="dropdown__list-wrap">
+                              <h3 class="dropdown__title dropdown__list-title">
+                                Shop Gifts
+                              </h3>
+                              <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                  <a href="#">ALL GIFTS</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">$100 and Under</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">$200 - $300</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">$300 and More</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">For Him</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">For Her</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">For Them</a>
+                                </li>
+                              </ul>
+                            </div>
+
+                            <div class="dropdown__list-wrap">
+                              <h3 class="dropdown__title dropdown__list-title">
+                                Extra 1
+                              </h3>
+                              <ul class="dropdown__list">
+                                <li class="dropdown__item">
+                                  <a href="#">Lorem ipsum</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Dolor sit</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Amet consectetur</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Adipiscing elit</a>
+                                </li>
+                                <li class="dropdown__item">
+                                  <a href="#">Sed do</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+
+                <button
+                  class="button header__burger mob-menu-open"
+                  type="button"
+                >
+                  <svg width="22" height="18">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                  </svg>
+                </button>
+
+                <div class="mobile-menu">
+                  <button
+                    class="button mobile-menu__btn mobile-menu__btn-close mob-menu-close"
+                    type="button"
+                  >
+                    close
+                  </button>
+                  <ul class="mobile-menu__list mobile-menu__border">
+                    <li class="mobile-menu__item">
+                      <button
+                        class="button mobile-menu__btn mobile-menu__list-btn mob-menu-btn"
+                        type="button"
+                      >
+                        <svg width="22" height="22">
+                          <use href="/images/icons.svg#icon-ring"></use>
+                        </svg>
+                        Jewelry
+                      </button>
+                      <ul class="mobile-menu__sublist">
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">All</a>
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">Necklaces</a>
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">Earrings</a>
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">Bracelets</a>
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">Rings</a>
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">Charms</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                      <button
+                        class="button mobile-menu__btn mobile-menu__list-btn mob-menu-btn"
+                        type="button"
+                      >
+                        <svg width="22" height="22">
+                          <use href="/images/icons.svg#icon-diamond"></use>
+                        </svg>
+                        NEW RELEASES
+                      </button>
+                      <ul class="mobile-menu__sublist">
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#"
+                            >the autumn equinox</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mobile-menu__item">
+                      <button
+                        class="button mobile-menu__btn mobile-menu__list-btn mob-menu-btn"
+                        type="button"
+                      >
+                        <svg width="22" height="22">
+                          <use href="/images/icons.svg#icon-gift"></use>
+                        </svg>
+                        GIFTS
+                      </button>
+                      <ul class="mobile-menu__sublist">
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">ALL GIFTS</a>
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#"
+                            >$100 and Under</a
+                          >
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">$200 - $300</a>
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#"
+                            >$300 and More</a
+                          >
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">For Him</a>
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">For Her</a>
+                        </li>
+                        <li class="mobile-menu__sub-item">
+                          <a class="mobile-menu__link" href="#">For Them</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <button
+                    class="button mobile-menu__btn mobile-menu__login modal-btn-open"
+                    data-index="1"
+                    type="button"
+                  >
+                    Log in
+                  </button>
+                  <ul
+                    class="mobile-menu__list mobile-menu__actions mobile-menu__border"
+                  >
+                    <li>
+                      <button
+                        class="button mobile-menu__btn mobile-menu__list-btn"
+                        type="button"
+                      >
+                        <svg width="22" height="22">
+                          <use href="/images/icons.svg#icon-cart"></use>
+                        </svg>
+                        Cart
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="button mobile-menu__btn mobile-menu__list-btn modal-btn-open"
+                        data-index="3"
+                        type="button"
+                      >
+                        <svg width="22" height="22">
+                          <use href="/images/icons.svg#icon-favorite"></use>
+                        </svg>
+                        FAVOURITES
+                      </button>
+                    </li>
+                  </ul>
+                  <div>
+                    <div class="mobile-menu__list mobile-menu__border">
+                      <h3 class="mobile-menu__footer-title">
+                        CUSTOMER SERVICES
+                      </h3>
+                      <ul>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#">
+                            <span>Contact Us</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Track your Order</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Shipping & Returns</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Frequently Asked Questions</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Schedule an appointment</span></a
+                          >
+                        </li>
+                      </ul>
                     </div>
+
+                    <div class="mobile-menu__list mobile-menu__border">
+                      <h3 class="mobile-menu__footer-title">ABOUT US</h3>
+                      <ul>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Origins</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Our Purpose</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Careers</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Sustainability</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Giving Back</span></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="mobile-menu__list mobile-menu__border">
+                      <h3 class="mobile-menu__footer-title">MATERIAL CARE</h3>
+                      <ul>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Jewelry Repair</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Ring Sizing</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Metal Allergy Resources</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Styling Tips</span></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <address class="mobile-menu__list mobile-menu__border">
+                      <div class="mobile-menu__footer-title">LOCATIONS</div>
+                      <!--використала div, бо h3 не можна використати -->
+                      <ul>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Chicago, IL</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>San Francisco, CA</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>New York, NY</span></a
+                          >
+                        </li>
+                        <li>
+                          <a class="mobile-menu__footer-link" href="#"
+                            ><span>Seattle, WA</span></a
+                          >
+                        </li>
+                      </ul>
+                    </address>
+                    <ul class="mobile-menu__socials">
+                      <li>
+                        <a href="#">
+                          <svg width="25" height="25">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg width="25" height="25">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg width="29" height="29">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg width="32" height="34">
+                            <use href="./images/icons.svg#icon-youtube"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <!--didn't add to sprite-->
+                          <svg
+                            width="24"
+                            height="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="#000"
+                              fill-opacity="1"
+                              fill-rule="evenodd"
+                              d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.836 1.836 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.839 1.839 0 0 1 1 21.161V2.838Zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634 3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388Zm-5.5 10.403h3.208V9.25H4.208v10.541ZM7.875 5.812a2.063 2.063 0 1 1-4.125.09 2.063 2.063 0 0 1 4.125-.09Z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <nav class="header__nav">
-              <ul class="header__menu">
-                <li class="header__item open-dropdown">
-                  <a href="#">JEWELRY</a>
+              <div class="logo">
+                <a class="logo__link" href="/">apollonian</a>
+              </div>
 
-                  <div class="dropdown">
-                    <div class="dropdown__container">
-                      <div class="dropdown__flex">
-                        <div class="dropdown__list-wrap">
-                          <h3 class="dropdown__title dropdown__list-title">
-                            Categories
-                          </h3>
-                          <ul class="dropdown__list">
-                            <li class="dropdown__item">
-                              <a href="./catalog/index.html">Necklaces</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Earrings</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Bracelets</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Rings</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Charms</a>
-                            </li>
-                          </ul>
-                        </div>
-
-                        <div class="dropdown__list-wrap">
-                          <h3 class="dropdown__title dropdown__list-title">
-                            Extra 1
-                          </h3>
-                          <ul class="dropdown__list">
-                            <li class="dropdown__item">
-                              <a href="#">Lorem ipsum</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Dolor sit</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Amet consectetur</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Adipiscing elit</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Sed do</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+              <div class="header__block header__block--right">
+                <!--search-->
+                <form class="header-search" name="header-search-form">
+                  <div class="header-search__wrap">
+                    <button class="button header-search__btn" type="submit">
+                      <svg width="17" height="17">
+                        <use href="./images/icons.svg#icon-search"></use>
+                      </svg>
+                    </button>
+                    <div class="header-search__form-field">
+                      <input
+                        class="header-search__input header-input"
+                        type="text"
+                        name="header-search"
+                        id="header-search"
+                        placeholder="Search"
+                      />
+                      <label
+                        class="header-search__label visually-hidden"
+                        for="header-search"
+                        >Search
+                      </label>
                     </div>
+                    <button
+                      class="button header-search__close search-form-close"
+                      type="button"
+                    >
+                      <svg width="17" height="17">
+                        <use href="/images/icons.svg#icon-close"></use>
+                      </svg>
+                    </button>
                   </div>
-                </li>
-                <li class="header__item">
-                  <a href="/new-collection/index.html">NEW RELEASES</a>
-                </li>
-                <li class="header__item open-dropdown">
-                  <a href="/gifts/index.html">GIFTS</a>
-                  <div class="dropdown">
-                    <div class="dropdown__container">
-                      <div class="dropdown__flex">
-                        <div class="dropdown__list-wrap">
-                          <h3 class="dropdown__title dropdown__list-title">
-                            Shop Gifts
-                          </h3>
-                          <ul class="dropdown__list">
-                            <li class="dropdown__item">
-                              <a href="#">ALL GIFTS</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">$100 and Under</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">$200 - $300</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">$300 and More</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">For Him</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">For Her</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">For Them</a>
-                            </li>
-                          </ul>
-                        </div>
+                </form>
 
-                        <div class="dropdown__list-wrap">
-                          <h3 class="dropdown__title dropdown__list-title">
-                            Extra 1
-                          </h3>
-                          <ul class="dropdown__list">
-                            <li class="dropdown__item">
-                              <a href="#">Lorem ipsum</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Dolor sit</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Amet consectetur</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Adipiscing elit</a>
-                            </li>
-                            <li class="dropdown__item">
-                              <a href="#">Sed do</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </nav>
-
-            <button class="button header__burger mob-menu-open" type="button">
-              <svg width="22" height="18">
-                <use href="./images/icons.svg#icon-burger"></use>
-              </svg>
-            </button>
-
-            <div class="mobile-menu">
-              <button
-                class="button mobile-menu__btn mobile-menu__btn-close mob-menu-close"
-                type="button"
-              >
-                close
-              </button>
-              <ul class="mobile-menu__list mobile-menu__border">
-                <li class="mobile-menu__item">
-                  <button
-                    class="button mobile-menu__btn mobile-menu__list-btn mob-menu-btn"
-                    type="button"
-                  >
-                    <svg width="22" height="22">
-                      <use href="/images/icons.svg#icon-ring"></use>
-                    </svg>
-                    Jewelry
-                  </button>
-                  <ul class="mobile-menu__sublist">
-                    <li class="mobile-menu__sub-item"><a class="mobile-menu__link" href="#">All</a></li>
-                    <li class="mobile-menu__sub-item"><a class="mobile-menu__link" href="#">Necklaces</a></li>
-                    <li class="mobile-menu__sub-item"><a class="mobile-menu__link" href="#">Earrings</a></li>
-                    <li class="mobile-menu__sub-item"><a class="mobile-menu__link" href="#">Bracelets</a></li>
-                    <li class="mobile-menu__sub-item"><a class="mobile-menu__link" href="#">Rings</a></li>
-                    <li class="mobile-menu__sub-item"><a class="mobile-menu__link" href="#">Charms</a></li>
-                  </ul>
-                </li>
-                <li class="mobile-menu__item">
-                  <button
-                    class="button mobile-menu__btn mobile-menu__list-btn mob-menu-btn"
-                    type="button"
-                  >
-                    <svg width="22" height="22">
-                      <use href="/images/icons.svg#icon-diamond"></use>
-                    </svg>
-                    NEW RELEASES
-                  </button>
-                  <ul class="mobile-menu__sublist">
-                    <li class="mobile-menu__sub-item">
-                      <a class="mobile-menu__link" href="#"
-                        >the autumn equinox</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="mobile-menu__item">
-                  <button
-                    class="button mobile-menu__btn mobile-menu__list-btn mob-menu-btn"
-                    type="button"
-                  >
-                    <svg width="22" height="22">
-                      <use href="/images/icons.svg#icon-gift"></use>
-                    </svg>
-                    GIFTS
-                  </button>
-                  <ul class="mobile-menu__sublist">
-                    <li class="mobile-menu__sub-item">
-                      <a class="mobile-menu__link" href="#">ALL GIFTS</a>
-                    </li>
-                    <li class="mobile-menu__sub-item">
-                      <a class="mobile-menu__link" href="#">$100 and Under</a>
-                    </li>
-                    <li class="mobile-menu__sub-item">
-                      <a class="mobile-menu__link" href="#">$200 - $300</a>
-                    </li>
-                    <li class="mobile-menu__sub-item">
-                      <a class="mobile-menu__link" href="#">$300 and More</a>
-                    </li>
-                    <li class="mobile-menu__sub-item">
-                      <a class="mobile-menu__link" href="#">For Him</a>
-                    </li>
-                    <li class="mobile-menu__sub-item">
-                      <a class="mobile-menu__link" href="#">For Her</a>
-                    </li>
-                    <li class="mobile-menu__sub-item">
-                      <a class="mobile-menu__link" href="#">For Them</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <button
-                class="button mobile-menu__btn mobile-menu__login modal-btn-open"
-                data-index="1"
-                type="button"
-              >
-                Log in
-              </button>
-              <ul
-                class="mobile-menu__list mobile-menu__actions mobile-menu__border"
-              >
-                <li>
-                  <button
-                    class="button mobile-menu__btn mobile-menu__list-btn"
-                    type="button"
-                  >
-                    <svg width="22" height="22">
-                      <use href="/images/icons.svg#icon-cart"></use>
-                    </svg>
-                    Cart
-                  </button>
-                </li>
-                <li>
-                  <button
-                    class="button mobile-menu__btn mobile-menu__list-btn modal-btn-open"
-                    data-index="3"
-                    type="button"
-                  >
-                    <svg width="22" height="22">
-                      <use href="/images/icons.svg#icon-favorite"></use>
-                    </svg>
-                    FAVOURITES
-                  </button>
-                </li>
-              </ul>
-              <div>
-                <div class="mobile-menu__list mobile-menu__border">
-                  <h3 class="mobile-menu__footer-title">CUSTOMER SERVICES</h3>
-                  <ul>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#">
-                        <span>Contact Us</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Track your Order</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Shipping & Returns</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Frequently Asked Questions</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Schedule an appointment</span></a
-                      >
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="mobile-menu__list mobile-menu__border">
-                  <h3 class="mobile-menu__footer-title">ABOUT US</h3>
-                  <ul>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Origins</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Our Purpose</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Careers</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Sustainability</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Giving Back</span></a
-                      >
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="mobile-menu__list mobile-menu__border">
-                  <h3 class="mobile-menu__footer-title">MATERIAL CARE</h3>
-                  <ul>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Jewelry Repair</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Ring Sizing</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Metal Allergy Resources</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Styling Tips</span></a
-                      >
-                    </li>
-                  </ul>
-                </div>
-
-                <address class="mobile-menu__list mobile-menu__border">
-                  <div class="mobile-menu__footer-title">LOCATIONS</div>
-                  <!--використала div, бо h3 не можна використати -->
-                  <ul>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Chicago, IL</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>San Francisco, CA</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>New York, NY</span></a
-                      >
-                    </li>
-                    <li>
-                      <a class="mobile-menu__footer-link" href="#"
-                        ><span>Seattle, WA</span></a
-                      >
-                    </li>
-                  </ul>
-                </address>
-                <ul class="mobile-menu__socials">
-                  <li>
-                    <a href="#">
-                      <svg width="25" height="25">
-                        <use href="./images/icons.svg#icon-instagram"></use>
+                <ul class="header__actions">
+                  <li class="header__actions-item header__actions-item--mob">
+                    <button
+                      class="button header__btn search-form-open"
+                      type="button"
+                    >
+                      <svg width="22" height="22">
+                        <use href="./images/icons.svg#icon-search"></use>
                       </svg>
-                    </a>
+                    </button>
                   </li>
-                  <li>
-                    <a href="#">
-                      <svg width="25" height="25">
-                        <use href="./images/icons.svg#icon-twitter"></use>
+                  <li
+                    class="header__actions-item header__actions-item--desktop"
+                  >
+                    <button
+                      class="button header__btn modal-btn-open"
+                      data-index="3"
+                      type="button"
+                    >
+                      <svg width="22" height="22">
+                        <use href="./images/icons.svg#icon-favorite"></use>
                       </svg>
-                    </a>
+                    </button>
                   </li>
-                  <li>
-                    <a href="#">
-                      <svg width="29" height="29">
-                        <use href="./images/icons.svg#icon-facebook"></use>
+                  <li class="header__actions-item">
+                    <button
+                      class="button header__btn modal-btn-open"
+                      type="button"
+                    >
+                      <svg width="22" height="22">
+                        <use href="./images/icons.svg#icon-cart"></use>
                       </svg>
-                    </a>
+                      <!--circle-->
+                      <div class="cart-circle"></div>
+                    </button>
                   </li>
-                  <li>
-                    <a href="#">
-                      <svg width="32" height="34">
-                        <use href="./images/icons.svg#icon-youtube"></use>
+                  <li class="header__actions-item header__actions-item--tablet">
+                    <button
+                      class="button header__btn modal-btn-open"
+                      data-index="1"
+                      type="button"
+                    >
+                      <svg width="22" height="24">
+                        <use href="./images/icons.svg#icon-user"></use>
                       </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <!--didn't add to sprite-->
-                      <svg
-                        width="24"
-                        height="24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="#000"
-                          fill-opacity="1"
-                          fill-rule="evenodd"
-                          d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.836 1.836 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.839 1.839 0 0 1 1 21.161V2.838Zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634 3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388Zm-5.5 10.403h3.208V9.25H4.208v10.541ZM7.875 5.812a2.063 2.063 0 1 1-4.125.09 2.063 2.063 0 0 1 4.125-.09Z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </a>
+                    </button>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+        </header>
 
-          <div class="logo">
-            <a class="logo__link" href="/">apollonian</a>
-          </div>
-
-          <div class="header__block header__block--right">
-            <!--search-->
-            <form class="header-search" name="header-search-form">
-              <div class="header-search__wrap">
-                <button class="button header-search__btn" type="submit">
-                  <svg width="17" height="17">
-                    <use href="./images/icons.svg#icon-search"></use>
-                  </svg>
-                </button>
-                <div class="header-search__form-field">
-                  <input
-                    class="header-search__input header-input"
-                    type="text"
-                    name="header-search"
-                    id="header-search"
-                    placeholder="Search"
-                  />
-                  <label
-                    class="header-search__label visually-hidden"
-                    for="header-search"
-                    >Search
-                  </label>
+        <main>
+          <div class="main">
+            <section class="main-container section hero-section">
+              <div class="container hero-container">
+                <h1 class="title hero-section__title hero-title">
+                  the autumn equinox
+                </h1>
+                <div class="hero-section__text hero-text">
+                  <p>Fall has arrived.</p>
+                  <p>Shop for our new releases starting today.</p>
                 </div>
-                <button
-                  class="button header-search__close search-form-close"
-                  type="button"
+                <a
+                  class="section__btn hero-section__btn hero-btn"
+                  href="/new-collection/index.html"
+                  >shop now</a
                 >
-                  <svg width="17" height="17">
-                    <use href="/images/icons.svg#icon-close"></use>
-                  </svg>
-                </button>
               </div>
-            </form>
+            </section>
 
-            <ul class="header__actions">
-              <li class="header__actions-item header__actions-item--mob">
-                <button
-                  class="button header__btn search-form-open"
-                  type="button"
-                >
-                  <svg width="22" height="22">
-                    <use href="./images/icons.svg#icon-search"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="header__actions-item header__actions-item--desktop">
-                <button
-                  class="button header__btn modal-btn-open"
-                  data-index="3"
-                  type="button"
-                >
-                  <svg width="22" height="22">
-                    <use href="./images/icons.svg#icon-favorite"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="header__actions-item">
-                <button class="button header__btn modal-btn-open" type="button">
-                  <svg width="22" height="22">
-                    <use href="./images/icons.svg#icon-cart"></use>
-                  </svg>
-                  <!--circle-->
-                  <div class="cart-circle"></div>
-                </button>
-              </li>
-              <li class="header__actions-item header__actions-item--tablet">
-                <button
-                  class="button header__btn modal-btn-open"
-                  data-index="1"
-                  type="button"
-                >
-                  <svg width="22" height="24">
-                    <use href="./images/icons.svg#icon-user"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
+            <section class="categories-section">
+              <div class="categories-section__container">
+                <h2 class="title categories-section__title">
+                  Shop by category
+                </h2>
+                <p class="categories-section__text">
+                  Indulge in what we offer.
+                </p>
 
-    <main>
-      <div class="main">
-        <section class="hero-section">
-          <div class="container">
-            <h1 class="title hero-section__title">the autumn equinox</h1>
-            <div class="hero-section__text">
-              <p>Fall has arrived.</p>
-              <p>
-                Shop for our new releases starting today.
-              </p>
-            </div>
-            <a
-              class="section__btn hero-section__btn"
-              href="/new-collection/index.html"
-              >shop now</a
+                <ul class="categories-section__list">
+                  <li class="categories-section__item">
+                    <article class="category-card">
+                      <a class="category-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/necklaces.webp    1x,
+                              ./images/necklaces@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/necklaces.jpg    1x,
+                              ./images/necklaces@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/necklaces.jpg"
+                            alt="necklaces category"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h3 class="category-card__title">
+                        <a href="#">Necklaces</a>
+                      </h3>
+                    </article>
+                  </li>
+
+                  <li class="categories-section__item">
+                    <article class="category-card">
+                      <a class="category-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/earrings.webp    1x,
+                              ./images/earrings@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/earrings.jpg    1x,
+                              ./images/earrings@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/earrings.jpg"
+                            alt="earrings category"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h3 class="category-card__title">
+                        <a href="#">Earrings</a>
+                      </h3>
+                    </article>
+                  </li>
+
+                  <li class="categories-section__item">
+                    <article class="category-card">
+                      <a class="category-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/bracelets.webp    1x,
+                              ./images/bracelets@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/bracelets.jpg    1x,
+                              ./images/bracelets@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/bracelets.jpg"
+                            alt="bracelets category"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h3 class="category-card__title">
+                        <a href="#">Bracelets</a>
+                      </h3>
+                    </article>
+                  </li>
+
+                  <li class="categories-section__item">
+                    <article class="category-card">
+                      <a class="category-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/rings.webp    1x,
+                              ./images/rings@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/rings.jpg    1x,
+                              ./images/rings@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/rings.jpg"
+                            alt="rings category"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h3 class="category-card__title">
+                        <a href="#">Rings</a>
+                      </h3>
+                    </article>
+                  </li>
+
+                  <li class="categories-section__item">
+                    <article class="category-card">
+                      <a class="category-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/charms.webp    1x,
+                              ./images/charms@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <source
+                            srcset="
+                              ./images/charms.jpg    1x,
+                              ./images/charms@2x.jpg 2x
+                            "
+                            type="image/jpeg"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/charms.jpg"
+                            alt="charms category"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h3 class="category-card__title">
+                        <a href="#">Charms</a>
+                      </h3>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="main-container section section--dark article-preview-section"
             >
-          </div>
-        </section>
-
-        <section class="section categories-section">
-          <div class="section__container categories-section__container">
-            <h2 class="title categories-section__title">Shop by category</h2>
-            <p class="categories-section__text">Indulge in what we offer.</p>
-
-            <ul class="categories-section__list">
-              <li class="categories-section__item">
-                <article class="category-card">
-                  <a class="category-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/necklaces.webp    1x,
-                          ./images/necklaces@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/necklaces.jpg    1x,
-                          ./images/necklaces@2x.jpg 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        class="category-image"
-                        src="./images/necklaces.jpg"
-                        alt="necklaces category"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h3 class="category-card__title">
-                    <a href="#">Necklaces</a>
-                  </h3>
-                </article>
-              </li>
-
-              <li class="categories-section__item">
-                <article class="category-card">
-                  <a class="category-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/earrings.webp    1x,
-                          ./images/earrings@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/earrings.jpg    1x,
-                          ./images/earrings@2x.jpg 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        class="category-image"
-                        src="./images/earrings.jpg"
-                        alt="earrings category"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h3 class="category-card__title">
-                    <a href="#">Earrings</a>
-                  </h3>
-                </article>
-              </li>
-
-              <li class="categories-section__item">
-                <article class="category-card">
-                  <a class="category-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/bracelets.webp    1x,
-                          ./images/bracelets@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/bracelets.jpg    1x,
-                          ./images/bracelets@2x.jpg 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        class="category-image"
-                        src="./images/bracelets.jpg"
-                        alt="bracelets category"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h3 class="category-card__title">
-                    <a href="#">Bracelets</a>
-                  </h3>
-                </article>
-              </li>
-
-              <li class="categories-section__item">
-                <article class="category-card">
-                  <a class="category-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/rings.webp    1x,
-                          ./images/rings@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="./images/rings.jpg 1x, ./images/rings@2x.jpg 2x"
-                        type="image/jpeg"
-                      />
-                      <img
-                        class="category-image"
-                        src="./images/rings.jpg"
-                        alt="rings category"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h3 class="category-card__title">
-                    <a href="#">Rings</a>
-                  </h3>
-                </article>
-              </li>
-
-              <li class="categories-section__item">
-                <article class="category-card">
-                  <a class="category-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/charms.webp    1x,
-                          ./images/charms@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/charms.jpg    1x,
-                          ./images/charms@2x.jpg 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        class="category-image"
-                        src="./images/charms.jpg"
-                        alt="charms category"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h3 class="category-card__title">
-                    <a href="#">Charms</a>
-                  </h3>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section section--dark article-preview-section">
-          <div class="section__container">
             <div class="section__flex">
-              <picture class="section__picture section__picture--left">
+              <picture class="section__picture">
                 <source
                   srcset="
                     ./images/article-preview-desk.webp    1x,
@@ -780,7 +822,7 @@
                   type="image/webp"
                 />
                 <img
-                  class="section__img"
+                  class="section__img article-prev-img"
                   src="./images/article-preview-desk.jpg"
                   alt="shining ring on the finger"
                   loading="lazy"
@@ -788,7 +830,7 @@
               </picture>
 
               <div class="section__inner article-preview-section__inner">
-                <div class="article-preview-section__content">
+                <div class="section__content article-preview-section__content article-prev-content">
                   <div class="article-preview-section__date">
                     ARTICLE &#8226; OCTOBER 2022
                   </div>
@@ -797,7 +839,7 @@
                     During the golden hour.
                   </h2>
 
-                  <div class="section__text article-preview-section__text">
+                  <div class="section__text">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -814,862 +856,891 @@
                   </div>
 
                   <a
-                    class="button section__btn button--white"
+                    class="section__btn button--white"
                     href="./article/index.html"
                     >READ MORE</a
                   >
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+            </section>
 
-        <section class="mobile-section gift-section-mobile">
-          <div class="mobile-section__container gift-section-mobile__container">
-            <div class="mobile-section__header">
-              <div class="mobile-section__header-inner">
-                <h2 class="title mobile-section__title">Gifts</h2>
+            <section class="mobile-section gift-section-mobile">
+              <div
+                class="mobile-section__container gift-section-mobile__container"
+              >
+                <div class="mobile-section__header">
+                  <div class="mobile-section__header-inner">
+                    <h2 class="title mobile-section__title">Gifts</h2>
+                  </div>
+                  <p class="mobile-section__text">
+                    Appreciate them materialistically.
+                  </p>
+                </div>
+                <div class="gift-section-mobile__top-block">
+                  <div class="gift-section-mobile__top-img"></div>
+                  <h3 class="gift-section-mobile__title">Best selling gifts</h3>
+                </div>
+
+                <ul class="gift-section-mobile__list">
+                  <li class="gift-section-mobile__item">
+                    <article class="mobile-card gift-card">
+                      <a class="mobile-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/gifts-100-and-under-mob.webp    1x,
+                              ./images/gifts-100-and-under-mob@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <!--клас задать інший або перейменувать-->
+                          <img
+                            class="category-image"
+                            src="./images/gifts-100-and-under-mob.jpg"
+                            alt="Earring with pearls on the ear"
+                            loading="lazy"
+                          />
+                        </picture>
+                        <h4 class="mobile-card__title gift-card__title">
+                          Gifts $100 and under
+                        </h4>
+                      </a>
+                    </article>
+                  </li>
+
+                  <li class="gift-section-mobile__item">
+                    <article class="mobile-card gift-card">
+                      <a class="mobile-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/gifts-100-200-mob.webp    1x,
+                              ./images/gifts-100-200-mob@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/gifts-100-200-mob.jpg"
+                            alt="Two gold chains on the neck"
+                            loading="lazy"
+                          />
+                        </picture>
+                        <h4 class="mobile-card__title gift-card__title">
+                          Gifts $100 - $200
+                        </h4>
+                      </a>
+                    </article>
+                  </li>
+
+                  <li class="gift-section-mobile__item">
+                    <article class="mobile-card gift-card">
+                      <a class="mobile-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/gifts-200-300-mob.webp    1x,
+                              ./images/gifts-200-300-mob@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/gifts-200-300-mob.jpg"
+                            alt="Gold bracelet on hand"
+                            loading="lazy"
+                          />
+                        </picture>
+
+                        <h4 class="mobile-card__title gift-card__title">
+                          Gifts $200 - $300
+                        </h4>
+                      </a>
+                    </article>
+                  </li>
+
+                  <li class="gift-section-mobile__item">
+                    <article class="mobile-card gift-card">
+                      <a class="mobile-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/gifts-300-and-more-mob.webp    1x,
+                              ./images/gifts-300-and-more-mob@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/gifts-300-and-more-mob.jpg"
+                            alt="Gold round earring"
+                            loading="lazy"
+                          />
+                        </picture>
+                        <h4 class="mobile-card__title gift-card__title">
+                          Gifts $300 and more
+                        </h4>
+                      </a>
+                    </article>
+                  </li>
+                </ul>
               </div>
-              <p class="mobile-section__text">
-                Appreciate them materialistically.
-              </p>
-            </div>
-            <div class="gift-section-mobile__top-block">
-              <div class="gift-section-mobile__top-img"></div>
-              <h3 class="gift-section-mobile__title">Best selling gifts</h3>
-            </div>
+            </section>
 
-            <ul class="gift-section-mobile__list">
-              <li class="gift-section-mobile__item">
-                <article class="mobile-card gift-card">
-                  <a class="mobile-card__link" href="#">
-                    <picture>
+            <section class="main-container section gift-section">
+              <div class="gift-section__container">
+                  <div class="section__flex">
+                    <div class="section__inner section__inner--center">
+                      <div class="section__content gift-section__content">
+                      <h2 class="section__title gift-section__title">
+                        Gifts of the season
+                      </h2>
+
+                      <div class="section__text">
+                        <!--на випадок якшо буде більше 1 абзаца-->
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Metus vulputate eu scelerisque
+                          felis imperdiet proin fermentum. Cras semper auctor
+                          neque vitae tempus quam pellentesque. Elementum
+                          sagittis vitae et leo duis.
+                        </p>
+                      </div>
+
+                      <a
+                        class="section__btn button--black"
+                        href="/gifts/index.html"
+                        >SHOP GIFTS</a
+                      >
+                      </div>
+                    </div>
+                    <picture class="section__picture section__picture--right">
                       <source
                         srcset="
-                          ./images/gifts-100-and-under-mob.webp    1x,
-                          ./images/gifts-100-and-under-mob@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <!--клас задать інший або перейменувать-->
-                      <img
-                        class="category-image"
-                        src="./images/gifts-100-and-under-mob.jpg"
-                        alt="Earring with pearls on the ear"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <h4 class="mobile-card__title gift-card__title">
-                      Gifts $100 and under
-                    </h4>
-                  </a>
-                </article>
-              </li>
-
-              <li class="gift-section-mobile__item">
-                <article class="mobile-card gift-card">
-                  <a class="mobile-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/gifts-100-200-mob.webp    1x,
-                          ./images/gifts-100-200-mob@2x.webp 2x
+                          ./images/gifts-section-desk.webp    1x,
+                          ./images/gifts-section-desk@2x.webp 2x
                         "
                         type="image/webp"
                       />
                       <img
-                        class="category-image"
-                        src="./images/gifts-100-200-mob.jpg"
-                        alt="Two gold chains on the neck"
+                        src="./images/gifts-section-desk.jpg"
+                        class="section__img"
+                        alt="necklace on plate"
                         loading="lazy"
                       />
                     </picture>
-                    <h4 class="mobile-card__title gift-card__title">
-                      Gifts $100 - $200
-                    </h4>
-                  </a>
-                </article>
-              </li>
+                  </div>
+                
+              </div>
+            </section>
 
-              <li class="gift-section-mobile__item">
-                <article class="mobile-card gift-card">
-                  <a class="mobile-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/gifts-200-300-mob.webp    1x,
-                          ./images/gifts-200-300-mob@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="category-image"
-                        src="./images/gifts-200-300-mob.jpg"
-                        alt="Gold bracelet on hand"
-                        loading="lazy"
-                      />
-                    </picture>
+            <section class="mobile-section inspo-section">
+              <div class="mobile-section__container inspo-section__container">
+                <div class="mobile-section__header">
+                  <div class="mobile-section__header-inner">
+                    <h2 class="title mobile-section__title">Inspo</h2>
+                  </div>
+                  <p class="mobile-section__text">
+                    Bring to life what’s on your mind.
+                  </p>
+                </div>
+                <ul class="inspo-section__list">
+                  <li>
+                    <article class="mobile-card inspo-card">
+                      <a class="mobile-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/inspo-everyday.webp    1x,
+                              ./images/inspo-everyday@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/inspo-everyday.jpg"
+                            alt="Round earring"
+                            loading="lazy"
+                          />
+                        </picture>
+                        <h4 class="mobile-card__title inspo-card__title">
+                          everyday
+                        </h4>
+                      </a>
+                    </article>
+                  </li>
 
-                    <h4 class="mobile-card__title gift-card__title">
-                      Gifts $200 - $300
-                    </h4>
-                  </a>
-                </article>
-              </li>
+                  <li>
+                    <article class="mobile-card inspo-card">
+                      <a class="mobile-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/inspo-bridal.webp    1x,
+                              ./images/inspo-bridal@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/inspo-bridal.jpg"
+                            alt="Gold necklace with stones"
+                            loading="lazy"
+                          />
+                        </picture>
+                        <h4 class="mobile-card__title inspo-card__title">
+                          bridal
+                        </h4>
+                      </a>
+                    </article>
+                  </li>
 
-              <li class="gift-section-mobile__item">
-                <article class="mobile-card gift-card">
-                  <a class="mobile-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/gifts-300-and-more-mob.webp    1x,
-                          ./images/gifts-300-and-more-mob@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="category-image"
-                        src="./images/gifts-300-and-more-mob.jpg"
-                        alt="Gold round earring"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <h4 class="mobile-card__title gift-card__title">
-                      Gifts $300 and more
-                    </h4>
-                  </a>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </section>
+                  <li>
+                    <article class="mobile-card inspo-card">
+                      <a class="mobile-card__link" href="#">
+                        <picture>
+                          <source
+                            srcset="
+                              ./images/inspo-birthday.webp    1x,
+                              ./images/inspo-birthday@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            class="category-image"
+                            src="./images/inspo-birthday.jpg"
+                            alt="Pendant with red stone on a gold chain"
+                            loading="lazy"
+                          />
+                        </picture>
+                        <h4 class="mobile-card__title inspo-card__title">
+                          birthday
+                        </h4>
+                      </a>
+                    </article>
+                  </li>
+                </ul>
+                <a class="mobile-section__btn" href="#">SEE MORE</a>
+              </div>
+            </section>
 
-        <section class="section gift-section">
-          <div class="gift-section__container">
-            <div class="section__container">
-              <div class="section__flex">
-                <div class="section__inner gift-section__inner">
-                  <h2 class="section__title gift-section__title">
-                    Gifts of the season
-                  </h2>
+            <section class="main-container section section--dark about-us-preview-section">
+                <div class="section__flex">
+                  <picture class="section__picture">
+                    <source
+                      srcset="
+                        ./images/about-us-preview.webp    1x,
+                        ./images/about-us-preview@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="section__img"
+                      src="./images/about-us-preview.jpg"
+                      alt="Sunset and sea"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <div class="section__inner section__inner--center about-us-preview-section__inner">
+                    <div class="section__content about-us-preview-section__content">
+                     <h2 class="about-us-preview-section__title">
+                      What were we made for?
+                    </h2>
 
-                  <div class="section__text gift-section__text">
-                    <!--на випадок якшо буде більше 1 абзаца-->
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Metus vulputate eu scelerisque felis imperdiet
-                      proin fermentum. Cras semper auctor neque vitae tempus
-                      quam pellentesque. Elementum sagittis vitae et leo duis.
+                    <div class="section__text about-us-preview-section__text">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Metus vulputate eu scelerisque felis
+                        imperdiet proin fermentum. Cras semper auctor neque
+                        vitae tempus quam pellentesque. Elementum sagittis vitae
+                        et leo duis.
+                      </p>
+
+                      <p>
+                        Elementum sagittis vitae et leo duis. Libero nunc
+                        consequat interdum varius. Habitant morbi tristique
+                        senectus et netus et malesuada fames ac.
+                      </p>
+                    </div>
+
+                    <a
+                      class="section__btn button--white about-us-preview-section__btn"
+                      href="./about-us/index.html"
+                      >ABOUT US</a
+                    >
+
+                    <ul class="about-us-preview-section__list">
+                      <li><a href="#">our story</a></li>
+                      <li><a href="#">our people</a></li>
+                      <li><a href="#">locations</a></li>
+                      <li><a href="#">contact us</a></li>
+                    </ul> 
+                    </div>
+                  </div>
+                </div>
+            </section>
+
+            <section class="mobile-section benefits-section">
+              <div
+                class="mobile-section__container benefits-section__container"
+              >
+                <h2 class="title benefits-section__title">Benefits</h2>
+
+                <ul class="benefits-section__list">
+                  <li class="benefits-section__item">
+                    <svg class="benefits-section__img" width="40" height="40">
+                      <use href="./images/icons.svg#icon-shipping"></use>
+                    </svg>
+                    <h3 class="title benefits-section__list-title">
+                      3-5 day shipping
+                    </h3>
+                    <div class="benefits-section__text">
+                      <p class="margin-bottom">Quick is what you want.</p>
+                      <p class="margin-bottom">It’s what we want, too.</p>
+                    </div>
+                  </li>
+
+                  <li class="benefits-section__item">
+                    <svg class="benefits-section__img" width="40" height="22">
+                      <use href="./images/icons.svg#icon-refunds"></use>
+                    </svg>
+                    <h3 class="title benefits-section__list-title">
+                      Full refunds
+                    </h3>
+                    <div class="benefits-section__text">
+                      <p class="margin-bottom">Dissatisfied?</p>
+                      <p class="margin-bottom">We definitely understand.</p>
+                    </div>
+                  </li>
+
+                  <li class="benefits-section__item">
+                    <svg class="benefits-section__img" width="29" height="35">
+                      <use href="./images/icons.svg#icon-ring"></use>
+                    </svg>
+                    <h3 class="title benefits-section__list-title">
+                      A freebie
+                    </h3>
+                    <p class="benefits-section__text">
+                      It’s the small things that count--inside your package.
                     </p>
+                  </li>
+                </ul>
+
+                <a class="mobile-section__btn" href="#">OUR FAQS</a>
+              </div>
+            </section>
+          </div>
+        </main>
+
+        <footer class="footer">
+          <div class="footer__wrap">
+            <div class="footer__container">
+              <nav class="footer__nav">
+                <div class="footer__inner">
+                  <div class="footer__list-wrap">
+                    <h3 class="footer__list-title">CUSTOMER SERVICES</h3>
+                    <h4 class="footer__list-title-mob">HELP</h4>
+                    <ul class="footer__list">
+                      <li class="footer__item"><a href="#">Contact Us</a></li>
+                      <li class="footer__item">
+                        <a href="#">Track your Order</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="#">Shipping & Returns</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="#">Frequently Asked Questions</a>
+                      </li>
+                      <li class="footer__item">
+                        <a href="#">Schedule an appointment</a>
+                      </li>
+                    </ul>
                   </div>
 
-                  <a
-                    class="button section__btn button--black"
-                    href="/gifts/index.html"
-                    >SHOP GIFTS</a
-                  >
-                </div>
-                <picture class="section__picture section__picture--right">
-                  <source
-                    srcset="
-                      ./images/gifts-section-desk.webp    1x,
-                      ./images/gifts-section-desk@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <img
-                    src="./images/gifts-section-desk.jpg"
-                    class="section__img"
-                    alt="necklace on plate"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="mobile-section inspo-section">
-          <div class="mobile-section__container inspo-section__container">
-            <div class="mobile-section__header">
-              <div class="mobile-section__header-inner">
-                <h2 class="title mobile-section__title">Inspo</h2>
-              </div>
-              <p class="mobile-section__text">
-                Bring to life what’s on your mind.
-              </p>
-            </div>
-            <ul class="inspo-section__list">
-              <li>
-                <article class="mobile-card inspo-card">
-                  <a class="mobile-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/inspo-everyday.webp    1x,
-                          ./images/inspo-everyday@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="category-image"
-                        src="./images/inspo-everyday.jpg"
-                        alt="Round earring"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <h4 class="mobile-card__title inspo-card__title">
-                      everyday
-                    </h4>
-                  </a>
-                </article>
-              </li>
-
-              <li>
-                <article class="mobile-card inspo-card">
-                  <a class="mobile-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/inspo-bridal.webp    1x,
-                          ./images/inspo-bridal@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="category-image"
-                        src="./images/inspo-bridal.jpg"
-                        alt="Gold necklace with stones"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <h4 class="mobile-card__title inspo-card__title">bridal</h4>
-                  </a>
-                </article>
-              </li>
-
-              <li>
-                <article class="mobile-card inspo-card">
-                  <a class="mobile-card__link" href="#">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/inspo-birthday.webp    1x,
-                          ./images/inspo-birthday@2x.webp 2x
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        class="category-image"
-                        src="./images/inspo-birthday.jpg"
-                        alt="Pendant with red stone on a gold chain"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <h4 class="mobile-card__title inspo-card__title">
-                      birthday
-                    </h4>
-                  </a>
-                </article>
-              </li>
-            </ul>
-            <a class="mobile-section__btn" href="#">SEE MORE</a>
-          </div>
-        </section>
-
-        <section class="section section--dark about-us-preview-section">
-          <div class="section__container">
-            <div class="section__flex">
-              <picture class="section__picture section__picture--left">
-                <source
-                  srcset="
-                    ./images/about-us-preview.webp    1x,
-                    ./images/about-us-preview@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <img
-                  class="section__img"
-                  src="./images/about-us-preview.jpg"
-                  alt="Sunset and sea"
-                  loading="lazy"
-                />
-              </picture>
-              <div class="section__inner about-us-preview-section__inner">
-                <h2 class="about-us-preview-section__title">
-                  What were we made for?
-                </h2>
-
-                <div class="section__text about-us-preview-section__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Metus vulputate eu scelerisque felis imperdiet proin
-                    fermentum. Cras semper auctor neque vitae tempus quam
-                    pellentesque. Elementum sagittis vitae et leo duis.
-                  </p>
-
-                  <p>
-                    Elementum sagittis vitae et leo duis. Libero nunc consequat
-                    interdum varius. Habitant morbi tristique senectus et netus
-                    et malesuada fames ac.
-                  </p>
+                  <div class="footer__list-wrap">
+                    <h3 class="footer__list-title">ABOUT US</h3>
+                    <h4 class="footer__list-title-mob">ABOUT US</h4>
+                    <ul class="footer__list">
+                      <li class="footer__item"><a href="#">Origins</a></li>
+                      <li class="footer__item"><a href="#">Our Purpose</a></li>
+                      <li class="footer__item"><a href="#">Careers</a></li>
+                      <li class="footer__item">
+                        <a href="#">Sustainability</a>
+                      </li>
+                      <li class="footer__item"><a href="#">Giving Back</a></li>
+                    </ul>
+                  </div>
                 </div>
 
-                <a
-                  class="button section__btn button--white about-us-preview-section__btn"
-                  href="./about-us/index.html"
-                  >ABOUT US</a
-                >
+                <div class="footer__inner footer__inner--reverse">
+                  <div class="footer__list-wrap">
+                    <h3 class="footer__list-title">MATERIAL CARE</h3>
+                    <h4 class="footer__list-title-mob">RESOURCES</h4>
+                    <ul class="footer__list">
+                      <li class="footer__item">
+                        <a href="#">Jewelry Repair</a>
+                      </li>
+                      <li class="footer__item"><a href="#">Ring Sizing</a></li>
+                      <li class="footer__item">
+                        <a href="#">Metal Allergy Resources</a>
+                      </li>
+                      <li class="footer__item"><a href="#">Styling Tips</a></li>
+                    </ul>
+                  </div>
 
-                <ul class="about-us-preview-section__list">
-                  <li><a href="#">our story</a></li>
-                  <li><a href="#">our people</a></li>
-                  <li><a href="#">locations</a></li>
-                  <li><a href="#">contact us</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="mobile-section benefits-section">
-          <div class="mobile-section__container benefits-section__container">
-            <h2 class="title benefits-section__title">Benefits</h2>
-
-            <ul class="benefits-section__list">
-              <li class="benefits-section__item">
-                <svg class="benefits-section__img" width="40" height="40">
-                  <use href="./images/icons.svg#icon-shipping"></use>
-                </svg>
-                <h3 class="title benefits-section__list-title">
-                  3-5 day shipping
-                </h3>
-                <div class="benefits-section__text">
-                  <p class="margin-bottom">Quick is what you want.</p>
-                  <p class="margin-bottom">It’s what we want, too.</p>
+                  <address class="footer__locations">
+                    <div class="footer__list-title">MAIN LOCATIONS</div>
+                    <div class="footer__list-title-mob">LOCATIONS</div>
+                    <!--використала div, бо h3 не можна використати -->
+                    <ul class="footer__list">
+                      <li class="footer__item"><a href="#">Chicago, IL</a></li>
+                      <li class="footer__item">
+                        <a href="#">San Francisco, CA</a>
+                      </li>
+                      <li class="footer__item"><a href="#">New York, NY</a></li>
+                      <li class="footer__item"><a href="#">Seattle, WA</a></li>
+                    </ul>
+                  </address>
                 </div>
-              </li>
+              </nav>
 
-              <li class="benefits-section__item">
-                <svg class="benefits-section__img" width="40" height="22">
-                  <use href="./images/icons.svg#icon-refunds"></use>
-                </svg>
-                <h3 class="title benefits-section__list-title">Full refunds</h3>
-                <div class="benefits-section__text">
-                  <p class="margin-bottom">Dissatisfied?</p>
-                  <p class="margin-bottom">We definitely understand.</p>
+              <address class="footer__address">
+                <div class="footer__block">
+                  <div class="footer__form-wrap">
+                    <p class="footer__text footer__text--bold">
+                      You can be one step ahead.
+                    </p>
+                    <p class="footer__text footer__text--normal">
+                      Sign up to hear about our updates on the dot.
+                    </p>
+                    <form class="footer-form" name="contact-form">
+                      <div class="footer-form__fieldset">
+                        <input
+                          class="footer-form__input"
+                          type="email"
+                          name="user-mail"
+                          id="user-mail"
+                          placeholder="Your email address"
+                        />
+                        <label
+                          class="footer-form__label visually-hidden"
+                          for="user-mail"
+                        >
+                          Email address
+                        </label>
+                      </div>
+                      <button class="button footer-form__btn" type="submit">
+                        SIGN UP
+                      </button>
+                    </form>
+                  </div>
+
+                  <ul class="footer__socials">
+                    <li>
+                      <a href="#">
+                        <svg class="footer-icon" width="25" height="25">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="footer-icon" width="25" height="25">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="footer-icon" width="29" height="29">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg class="footer-icon" width="32" height="34">
+                          <use href="./images/icons.svg#icon-youtube"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <!--в спрайт не вдалось додати, ламалась svg при додаванні на сайті-->
+                        <svg
+                          class="footer-icon"
+                          width="24"
+                          height="24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="#000"
+                            fill-opacity="1"
+                            fill-rule="evenodd"
+                            d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.836 1.836 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.839 1.839 0 0 1 1 21.161V2.838Zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634 3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388Zm-5.5 10.403h3.208V9.25H4.208v10.541ZM7.875 5.812a2.063 2.063 0 1 1-4.125.09 2.063 2.063 0 0 1 4.125-.09Z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-              </li>
-
-              <li class="benefits-section__item">
-                <svg class="benefits-section__img" width="29" height="35">
-                  <use href="./images/icons.svg#icon-ring"></use>
-                </svg>
-                <h3 class="title benefits-section__list-title">A freebie</h3>
-                <p class="benefits-section__text">
-                  It’s the small things that count--inside your package.
-                </p>
-              </li>
-            </ul>
-
-            <a class="mobile-section__btn" href="#">OUR FAQS</a>
-          </div>
-        </section>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__wrap">
-        <div class="footer__container">
-          <nav class="footer__nav">
-            <div class="footer__inner">
-              <div class="footer__list-wrap">
-                <h3 class="footer__list-title">CUSTOMER SERVICES</h3>
-                <h4 class="footer__list-title-mob">HELP</h4>
-                <ul class="footer__list">
-                  <li class="footer__item"><a href="#">Contact Us</a></li>
-                  <li class="footer__item"><a href="#">Track your Order</a></li>
-                  <li class="footer__item">
-                    <a href="#">Shipping & Returns</a>
-                  </li>
-                  <li class="footer__item">
-                    <a href="#">Frequently Asked Questions</a>
-                  </li>
-                  <li class="footer__item">
-                    <a href="#">Schedule an appointment</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="footer__list-wrap">
-                <h3 class="footer__list-title">ABOUT US</h3>
-                <h4 class="footer__list-title-mob">ABOUT US</h4>
-                <ul class="footer__list">
-                  <li class="footer__item"><a href="#">Origins</a></li>
-                  <li class="footer__item"><a href="#">Our Purpose</a></li>
-                  <li class="footer__item"><a href="#">Careers</a></li>
-                  <li class="footer__item"><a href="#">Sustainability</a></li>
-                  <li class="footer__item"><a href="#">Giving Back</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="footer__inner footer__inner--reverse">
-              <div class="footer__list-wrap">
-                <h3 class="footer__list-title">MATERIAL CARE</h3>
-                <h4 class="footer__list-title-mob">RESOURCES</h4>
-                <ul class="footer__list">
-                  <li class="footer__item"><a href="#">Jewelry Repair</a></li>
-                  <li class="footer__item"><a href="#">Ring Sizing</a></li>
-                  <li class="footer__item">
-                    <a href="#">Metal Allergy Resources</a>
-                  </li>
-                  <li class="footer__item"><a href="#">Styling Tips</a></li>
-                </ul>
-              </div>
-
-              <address class="footer__locations">
-                <div class="footer__list-title">MAIN LOCATIONS</div>
-                <div class="footer__list-title-mob">LOCATIONS</div>
-                <!--використала div, бо h3 не можна використати -->
-                <ul class="footer__list">
-                  <li class="footer__item"><a href="#">Chicago, IL</a></li>
-                  <li class="footer__item">
-                    <a href="#">San Francisco, CA</a>
-                  </li>
-                  <li class="footer__item"><a href="#">New York, NY</a></li>
-                  <li class="footer__item"><a href="#">Seattle, WA</a></li>
-                </ul>
               </address>
             </div>
-          </nav>
+            <div class="footer-copyright">
+              <p class="footer-copyright__text margin-bottom">
+                &#169; APOLLONIAN, LLC
+              </p>
 
-          <address class="footer__address">
-            <div class="footer__block">
-              <div class="footer__form-wrap">
-                <p class="footer__text footer__text--bold">
-                  You can be one step ahead.
-                </p>
-                <p class="footer__text footer__text--normal">
-                  Sign up to hear about our updates on the dot.
-                </p>
-                <form class="footer-form" name="contact-form">
-                  <div class="footer-form__fieldset">
-                    <input
-                      class="footer-form__input"
-                      type="email"
-                      name="user-mail"
-                      id="user-mail"
-                      placeholder="Your email address"
-                    />
-                    <label
-                      class="footer-form__label visually-hidden"
-                      for="user-mail"
-                    >
-                      Email address
-                    </label>
-                  </div>
-                  <button class="button footer-form__btn" type="submit">
-                    SIGN UP
-                  </button>
-                </form>
-              </div>
-
-              <ul class="footer__socials">
-                <li>
-                  <a href="#">
-                    <svg class="footer-icon" width="25" height="25">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
+              <ul class="footer-copyright__list">
+                <li class="footer-copyright__item footer-copyright__marker">
+                  <a href="#"> PRIVACY POLICY </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg class="footer-icon" width="25" height="25">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
+                <li class="footer-copyright__item">
+                  <a href="#"> TERMS OF USE </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg class="footer-icon" width="29" height="29">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
+                <li class="footer-copyright__item">
+                  <a href="#"> SITEMAP </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <svg class="footer-icon" width="32" height="34">
-                      <use href="./images/icons.svg#icon-youtube"></use>
-                    </svg>
-                  </a>
+                <li class="footer-copyright__item">
+                  <a href="#"> DO NOT SELL MY INFORMATION </a>
                 </li>
-                <li>
-                  <a href="#">
-                    <!--в спрайт не вдалось додати, ламалась svg при додаванні на сайті-->
-                    <svg
-                      class="footer-icon"
-                      width="24"
-                      height="24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        fill="#000"
-                        fill-opacity="1"
-                        fill-rule="evenodd"
-                        d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.836 1.836 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.839 1.839 0 0 1 1 21.161V2.838Zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634 3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708V9.388Zm-5.5 10.403h3.208V9.25H4.208v10.541ZM7.875 5.812a2.063 2.063 0 1 1-4.125.09 2.063 2.063 0 0 1 4.125-.09Z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
+                <li class="footer-copyright__item">
+                  <a href="#"> COOKIES </a>
                 </li>
               </ul>
             </div>
-          </address>
-        </div>
-        <div class="footer-copyright">
-          <p class="footer-copyright__text margin-bottom">
-            &#169; APOLLONIAN, LLC
-          </p>
-
-          <ul class="footer-copyright__list">
-            <li class="footer-copyright__item footer-copyright__marker">
-              <a href="#"> PRIVACY POLICY </a>
-            </li>
-            <li class="footer-copyright__item">
-              <a href="#"> TERMS OF USE </a>
-            </li>
-            <li class="footer-copyright__item"><a href="#"> SITEMAP </a></li>
-            <li class="footer-copyright__item">
-              <a href="#"> DO NOT SELL MY INFORMATION </a>
-            </li>
-            <li class="footer-copyright__item"><a href="#"> COOKIES </a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
-    <div class="backdrop" data-index="1">
-      <div class="modal login-modal">
-        <div class="modal__wrap">
-          <div class="modal__header modal__header--gradient modal__border">
-            <svg class="modal-icon" width="32" height="32">
-              <use href="/images/icons.svg#icon-person"></use>
-            </svg>
-            <h2 class="title modal__title">Log In</h2>
-            <button class="button btn-close modal-btn-close" type="button">
-              <svg class="modal__close" width="28" height="28">
-                <use href="/images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
           </div>
+        </footer>
 
-          <div class="modal__form-wrapper login-modal__form-wrap">
-            <form class="modal__form" name="login-form">
-              <div class="modal__form-inner login-modal__form-inner">
-                <div class="modal__form-field">
-                  <label class="visually-hidden modal__label" for="user-email"
-                    >Email</label
-                  >
-                  <input
-                    class="modal__input"
-                    type="email"
-                    name="user-email"
-                    id="user-email"
-                    placeholder="Email address"
-                  />
-                </div>
-
-                <div class="modal__form-field">
-                  <label
-                    class="visually-hidden modal__label"
-                    for="user-password"
-                    >Password</label
-                  >
-                  <input
-                    class="modal__input"
-                    type="password"
-                    name="user-password"
-                    id="user-password"
-                    placeholder="Password"
-                  />
-                </div>
+        <div class="backdrop" data-index="1">
+          <div class="modal login-modal">
+            <div class="modal__wrap">
+              <div class="modal__header modal__header--gradient modal__border">
+                <svg class="modal-icon" width="32" height="32">
+                  <use href="/images/icons.svg#icon-person"></use>
+                </svg>
+                <h2 class="title modal__title">Log In</h2>
+                <button class="button btn-close modal-btn-close" type="button">
+                  <svg class="modal__close" width="28" height="28">
+                    <use href="/images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
               </div>
 
-              <a class="modal__link" href="#">Forgot Password</a>
-              <button class="modal__btn" type="submit">LOG IN</button>
+              <div class="modal__form-wrapper login-modal__form-wrap">
+                <form class="modal__form" name="login-form">
+                  <div class="modal__form-inner login-modal__form-inner">
+                    <div class="modal__form-field">
+                      <label
+                        class="visually-hidden modal__label"
+                        for="user-email"
+                        >Email</label
+                      >
+                      <input
+                        class="modal__input"
+                        type="email"
+                        name="user-email"
+                        id="user-email"
+                        placeholder="Email address"
+                      />
+                    </div>
 
-              <div class="modal__checkbox checkbox">
-                <input
-                  class="checkbox__input visually-hidden"
-                  type="checkbox"
-                  name="checkbox-input"
-                  id="checkbox_1"
-                />
-                <label class="checkbox__label" for="checkbox_1"
-                  >Keep me logged in
-                </label>
+                    <div class="modal__form-field">
+                      <label
+                        class="visually-hidden modal__label"
+                        for="user-password"
+                        >Password</label
+                      >
+                      <input
+                        class="modal__input"
+                        type="password"
+                        name="user-password"
+                        id="user-password"
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+
+                  <a class="modal__link" href="#">Forgot Password</a>
+                  <button class="modal__btn" type="submit">LOG IN</button>
+
+                  <div class="modal__checkbox checkbox">
+                    <input
+                      class="checkbox__input visually-hidden"
+                      type="checkbox"
+                      name="checkbox-input"
+                      id="checkbox_1"
+                    />
+                    <label class="checkbox__label" for="checkbox_1"
+                      >Keep me logged in
+                    </label>
+                  </div>
+                  <p class="modal__text">Don’t have an account?</p>
+                  <a class="modal__auth" href="#">Sign up now.</a>
+                </form>
               </div>
-              <p class="modal__text">Don’t have an account?</p>
-              <a class="modal__auth" href="#">Sign up now.</a>
-            </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="backdrop" data-index="2">
+          <div class="modal sign-up-modal">
+            <div class="modal__wrap">
+              <div class="modal__header modal__header--gradient modal__border">
+                <svg class="modal-icon" width="32" height="32">
+                  <use href="/images/icons.svg#icon-person"></use>
+                </svg>
+                <h2 class="title modal__title">Sign Up</h2>
+                <button class="button btn-close modal-btn-close" type="button">
+                  <svg class="modal__close" width="28" height="28">
+                    <use href="/images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="modal__form-wrapper">
+                <form class="modal__form" name="sign-up-form">
+                  <div class="modal__form-inner sign-up-modal__form-inner">
+                    <div class="modal__form-field">
+                      <label
+                        class="visually-hidden modal__label"
+                        for="signup-user-email"
+                        >Email</label
+                      >
+                      <input
+                        class="modal__input"
+                        type="email"
+                        name="user-email"
+                        id="signup-user-email"
+                        placeholder="Email address"
+                      />
+                    </div>
+
+                    <div class="modal__form-field">
+                      <label
+                        class="visually-hidden modal__label"
+                        for="signup-user-password"
+                        >Password</label
+                      >
+                      <input
+                        class="modal__input"
+                        type="password"
+                        name="user-password"
+                        id="signup-user-password"
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+
+                  <button class="modal__btn" type="submit">SIGN UP</button>
+
+                  <p class="modal__text">Already have an account?</p>
+                  <a class="modal__auth" href="#">LOG IN</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="backdrop" data-index="3">
+          <div class="modal favourites-modal">
+            <div class="modal__wrap">
+              <div
+                class="modal__header modal__header--white favourites-modal__border"
+              >
+                <svg class="favourites-icon" width="25" height="24">
+                  <use href="/images/icons.svg#icon-heart"></use>
+                </svg>
+                <h2 class="title modal__title">My Favorites</h2>
+                <button class="button btn-close modal-btn-close" type="button">
+                  <svg class="modal__close" width="28" height="28">
+                    <use href="/images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="favourites-modal__cards">
+                <ul class="favourites-modal__list">
+                  <li class="favourites-modal__item">
+                    <article class="card">
+                      <a class="card__link" href="/catalog/index.html">
+                        <picture>
+                          <source
+                            srcset="/images/catalog-charms-1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            class="card__img"
+                            src="/images/catalog-charms-1.jpg"
+                            alt="favorites goods"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h2 class="card__title">
+                        <a href="/catalog/index.html">CORNICELLO CHARM</a>
+                      </h2>
+                      <span class="card__price">$90.00</span>
+                    </article>
+                  </li>
+
+                  <li class="favourites-modal__item">
+                    <article class="card">
+                      <a class="card__link" href="/catalog/index.html">
+                        <picture>
+                          <source
+                            srcset="/images/catalog-charms-2.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            class="card__img"
+                            src="/images/catalog-charms-2.jpg"
+                            alt="favorites goods"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h2 class="card__title">
+                        <a href="/catalog/index.html">KEY CHARM</a>
+                      </h2>
+                      <span class="card__price">$80.00</span>
+                    </article>
+                  </li>
+
+                  <li class="favourites-modal__item">
+                    <article class="card">
+                      <a class="card__link" href="/catalog/index.html">
+                        <picture>
+                          <source
+                            srcset="/images/catalog-charms-3.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            class="card__img"
+                            src="/images/catalog-charms-3.jpg"
+                            alt="favorites goods"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h2 class="card__title">
+                        <a href="/catalog/index.html">GLOBE CHARM</a>
+                      </h2>
+                      <span class="card__price">$90.00</span>
+                    </article>
+                  </li>
+
+                  <li class="favourites-modal__item">
+                    <article class="card">
+                      <a class="card__link" href="/catalog/index.html">
+                        <picture>
+                          <source
+                            srcset="/images/catalog-earrings-1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            class="card__img"
+                            src="/images/catalog-earrings-1.jpg"
+                            alt="favorites goods"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h2 class="card__title">
+                        <a href="/catalog/index.html">CHAIN DROPS</a>
+                      </h2>
+                      <span class="card__price">$40.00</span>
+                    </article>
+                  </li>
+
+                  <li class="favourites-modal__item">
+                    <article class="card">
+                      <a class="card__link" href="/catalog/index.html">
+                        <picture>
+                          <source
+                            srcset="/images/catalog-necklaces-1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            class="card__img"
+                            src="/images/catalog-necklaces-1.jpg"
+                            alt="favorites goods"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h2 class="card__title">
+                        <a href="/catalog/index.html">OPAL HEART</a>
+                      </h2>
+                      <span class="card__price">$100.00</span>
+                    </article>
+                  </li>
+
+                  <li class="favourites-modal__item">
+                    <article class="card">
+                      <a class="card__link" href="/catalog/index.html">
+                        <picture>
+                          <source
+                            srcset="/images/catalog-bracelets-1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            class="card__img"
+                            src="/images/catalog-bracelets-1.jpg"
+                            alt="favorites goods"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h2 class="card__title">
+                        <a href="/catalog/index.html">LEAFY CHAIN</a>
+                      </h2>
+                      <span class="card__price">$60.00</span>
+                    </article>
+                  </li>
+
+                  <li class="favourites-modal__item">
+                    <article class="card">
+                      <a class="card__link" href="/catalog/index.html">
+                        <picture>
+                          <source
+                            srcset="/images/catalog-rings-1.webp"
+                            type="image/webp"
+                          />
+                          <img
+                            class="card__img"
+                            src="/images/catalog-rings-1.jpg"
+                            alt="favorites goods"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
+                      <h2 class="card__title">
+                        <a href="/catalog/index.html">ROSE RING</a>
+                      </h2>
+                      <span class="card__price">$100.00</span>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="backdrop" data-index="2">
-      <div class="modal sign-up-modal">
-        <div class="modal__wrap">
-          <div class="modal__header modal__header--gradient modal__border">
-            <svg class="modal-icon" width="32" height="32">
-              <use href="/images/icons.svg#icon-person"></use>
-            </svg>
-            <h2 class="title modal__title">Sign Up</h2>
-            <button class="button btn-close modal-btn-close" type="button">
-              <svg class="modal__close" width="28" height="28">
-                <use href="/images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
-
-          <div class="modal__form-wrapper">
-            <form class="modal__form" name="sign-up-form">
-              <div class="modal__form-inner sign-up-modal__form-inner">
-                <div class="modal__form-field">
-                  <label
-                    class="visually-hidden modal__label"
-                    for="signup-user-email"
-                    >Email</label
-                  >
-                  <input
-                    class="modal__input"
-                    type="email"
-                    name="user-email"
-                    id="signup-user-email"
-                    placeholder="Email address"
-                  />
-                </div>
-
-                <div class="modal__form-field">
-                  <label
-                    class="visually-hidden modal__label"
-                    for="signup-user-password"
-                    >Password</label
-                  >
-                  <input
-                    class="modal__input"
-                    type="password"
-                    name="user-password"
-                    id="signup-user-password"
-                    placeholder="Password"
-                  />
-                </div>
-              </div>
-
-              <button class="modal__btn" type="submit">SIGN UP</button>
-
-              <p class="modal__text">Already have an account?</p>
-              <a class="modal__auth" href="#">LOG IN</a>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="backdrop" data-index="3">
-      <div class="modal favourites-modal">
-        <div class="modal__wrap">
-          <div
-            class="modal__header modal__header--white favourites-modal__border"
-          >
-            <svg class="favourites-icon" width="25" height="24">
-              <use href="/images/icons.svg#icon-heart"></use>
-            </svg>
-            <h2 class="title modal__title">My Favorites</h2>
-            <button class="button btn-close modal-btn-close" type="button">
-              <svg class="modal__close" width="28" height="28">
-                <use href="/images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-          </div>
-
-          <div class="favourites-modal__cards">
-            <ul class="favourites-modal__list">
-              <li class="favourites-modal__item">
-                <article class="card">
-                  <a class="card__link" href="/catalog/index.html">
-                    <picture>
-                      <source
-                        srcset="/images/catalog-charms-1.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="card__img"
-                        src="/images/catalog-charms-1.jpg"
-                        alt="favorites goods"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h2 class="card__title">
-                    <a href="/catalog/index.html">CORNICELLO CHARM</a>
-                  </h2>
-                  <span class="card__price">$90.00</span>
-                </article>
-              </li>
-
-              <li class="favourites-modal__item">
-                <article class="card">
-                  <a class="card__link" href="/catalog/index.html">
-                    <picture>
-                      <source
-                        srcset="/images/catalog-charms-2.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="card__img"
-                        src="/images/catalog-charms-2.jpg"
-                        alt="favorites goods"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h2 class="card__title">
-                    <a href="/catalog/index.html">KEY CHARM</a>
-                  </h2>
-                  <span class="card__price">$80.00</span>
-                </article>
-              </li>
-
-              <li class="favourites-modal__item">
-                <article class="card">
-                  <a class="card__link" href="/catalog/index.html">
-                    <picture>
-                      <source
-                        srcset="/images/catalog-charms-3.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="card__img"
-                        src="/images/catalog-charms-3.jpg"
-                        alt="favorites goods"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h2 class="card__title">
-                    <a href="/catalog/index.html">GLOBE CHARM</a>
-                  </h2>
-                  <span class="card__price">$90.00</span>
-                </article>
-              </li>
-
-              <li class="favourites-modal__item">
-                <article class="card">
-                  <a class="card__link" href="/catalog/index.html">
-                    <picture>
-                      <source
-                        srcset="/images/catalog-earrings-1.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="card__img"
-                        src="/images/catalog-earrings-1.jpg"
-                        alt="favorites goods"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h2 class="card__title">
-                    <a href="/catalog/index.html">CHAIN DROPS</a>
-                  </h2>
-                  <span class="card__price">$40.00</span>
-                </article>
-              </li>
-
-              <li class="favourites-modal__item">
-                <article class="card">
-                  <a class="card__link" href="/catalog/index.html">
-                    <picture>
-                      <source
-                        srcset="/images/catalog-necklaces-1.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="card__img"
-                        src="/images/catalog-necklaces-1.jpg"
-                        alt="favorites goods"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h2 class="card__title">
-                    <a href="/catalog/index.html">OPAL HEART</a>
-                  </h2>
-                  <span class="card__price">$100.00</span>
-                </article>
-              </li>
-
-              <li class="favourites-modal__item">
-                <article class="card">
-                  <a class="card__link" href="/catalog/index.html">
-                    <picture>
-                      <source
-                        srcset="/images/catalog-bracelets-1.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="card__img"
-                        src="/images/catalog-bracelets-1.jpg"
-                        alt="favorites goods"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h2 class="card__title">
-                    <a href="/catalog/index.html">LEAFY CHAIN</a>
-                  </h2>
-                  <span class="card__price">$60.00</span>
-                </article>
-              </li>
-
-              <li class="favourites-modal__item">
-                <article class="card">
-                  <a class="card__link" href="/catalog/index.html">
-                    <picture>
-                      <source
-                        srcset="/images/catalog-rings-1.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        class="card__img"
-                        src="/images/catalog-rings-1.jpg"
-                        alt="favorites goods"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </a>
-                  <h2 class="card__title">
-                    <a href="/catalog/index.html">ROSE RING</a>
-                  </h2>
-                  <span class="card__price">$100.00</span>
-                </article>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script type="module" src="/code/header.js"></script>
     <script type="module" src="/code/search-form.js"></script>
     <script type="module" src="/code/mob-menu.js"></script>
-    <script type="module" src="/code/header.js"></script>
     <script type="module" src="/code/hero.js"></script>
     <script type="module" src="/code/modal.js"></script>
+    <script type="module" src="/code/animation/index.js"></script>
   </body>
 </html>

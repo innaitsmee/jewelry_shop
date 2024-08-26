@@ -1,14 +1,14 @@
-import toggleFunc from "./toggle-func.js";
+import toggleClass from "./toggle-func.js";
 
 const headerForm = document.querySelector(".header-search"),
-  searchFormOpen = document.querySelector(".search-form-open"),
-  searchFormClose = document.querySelector(".search-form-close");
+  searchBtnOpen = document.querySelector(".search-form-open"),
+  searchBtnClose = document.querySelector(".search-form-close");
 
-for (let btn of [searchFormOpen, searchFormClose]) {
+for (let btn of [searchBtnOpen, searchBtnClose]) {
   btn.addEventListener("click", () => {
-    toggleFunc(headerForm, "is-active");
+    toggleClass(headerForm, "is-active");
 
-    if (btn === searchFormOpen)
+    if (btn === searchBtnOpen)
       document.querySelector(".header-input").value = "";
   });
 }

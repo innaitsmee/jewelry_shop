@@ -1,3 +1,3 @@
-let toggleFunc = (elem, elemClass) => elem.classList.toggle(elemClass);
+let toggleClass = (elem, elemClass) => elem.classList.toggle(elemClass);
 
-export default toggleFunc;
+export default toggleClass;

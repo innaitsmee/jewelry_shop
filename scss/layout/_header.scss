@@ -22,9 +22,6 @@
   }
 
   &__container {
-    width: 100%;
-    max-width: 1512px;
-    margin: 0 auto;
     padding: 0 24px;
 
     @media screen and (min-width: $bp-desktop) {

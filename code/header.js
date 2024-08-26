@@ -1,5 +1,5 @@
 import isMobile from "./touchscreen-check-func.js";
-import toggleFunc from "./toggle-func.js";
+import toggleClass from "./toggle-func.js";
 
 const [...dropdowns] = document.querySelectorAll(".dropdown");
 
@@ -20,9 +20,9 @@ if (isMobile.any()) {
   [...document.querySelectorAll(".touch-btn")].forEach((btn) => {
     btn.addEventListener("click", function () {
       //open dropdown and rotate arrow at header items
-      toggleFunc(this.nextElementSibling, "active-dropdown");
+      toggleClass(this.nextElementSibling, "active-dropdown");
       if (this.parentElement.classList.contains("touch")) {
-        toggleFunc(this, "rotate");
+        toggleClass(this, "rotate");
       }
 
       //close all dropdowns were opened before

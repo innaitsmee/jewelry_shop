@@ -1,11 +1,10 @@
 .gift-section {
-  color: var(--color-standard-black);
-  padding: 70px 0;
   display: none;
 
   @media screen and (min-width: $bp-tablet) {
     display: block;
-    overflow: hidden;
+    color: var(--color-standard-black);
+    padding: 70px 0;
   }
 
   &__container {
@@ -17,9 +16,8 @@
       #f4f0eb;
   }
 
-  &__inner {
+  &__content {
     max-width: 610px;
-    align-self: center;
   }
 
   &__title {
