@@ -23,7 +23,7 @@ categoriesTL
 //main scroll animation
 categoriesScrollAnimation.add(
   {
-    isMobile: `(max-width: ${bpTablet - 1}px)`,
+    isMobile: `(max-width: ${bpTablet-1}px)`,
     isDesktop: `(min-width: ${bpTablet}px)`,
     reduceMotion: "(prefers-reduced-motion: reduce)",
   },
