@@ -2,7 +2,6 @@ import toggleClass from "./toggle-func.js";
 import { headerForm } from "./search-form.js";
 
 const mobMenu = document.querySelector(".mobile-menu"),
-  [...menuBtns] = document.querySelectorAll(".mob-menu-btn"),
   menuActions = [
     document.querySelector(".mob-menu-open"),
     document.querySelector(".mob-menu-close"),
@@ -21,19 +20,19 @@ for (let elem of menuActions) {
 }
 
 //open sublist
-menuBtns.forEach((elem) => {
-  elem.addEventListener("click", () => {
+document.querySelector(".mobile-menu__list").addEventListener("click", (e) => {
+  if (e.target.classList.contains("mob-menu-btn")) {
     //toggle class at sublist after clicked btn
-    toggleClass(elem.nextElementSibling, "active-sublist");
+    toggleClass(e.target.nextElementSibling, "active-sublist");
     //open items of sublist
-    [...elem.nextElementSibling.children].forEach((e, i) => {
-      toggleClass(e, "active-sub-item");
-      if (e.classList.contains("active-sub-item")) {
+    [...e.target.nextElementSibling.children].forEach((el, i) => {
+      toggleClass(el, "active-sub-item");
+      if (el.classList.contains("active-sub-item")) {
         //add delay for open item step by step
-        e.style.transitionDelay = `.${i}s`;
-      } else e.removeAttribute("style");
+        el.style.transitionDelay = `.${i}s`;
+      } else el.removeAttribute("style");
     });
-  });
+  }
 });
 
 export { mobMenu };

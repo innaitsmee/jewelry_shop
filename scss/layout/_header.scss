@@ -205,3 +205,8 @@
   border-right: 6px solid var(--color-standard-white);
   transition: border-top-color, 0.3s;
 }
+
+//for all icons inside btns
+.touch-btn *{
+  pointer-events: none;
+}

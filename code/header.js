@@ -17,22 +17,22 @@ if (isMobile.any()) {
   });
 
   //open dropdown
-  [...document.querySelectorAll(".touch-btn")].forEach((btn) => {
-    btn.addEventListener("click", function () {
+  document.querySelector(".header__block").addEventListener("click", (e) => {
+    if (e.target.classList.contains("touch-btn")) {
       //open dropdown and rotate arrow at header items
-      toggleClass(this.nextElementSibling, "active-dropdown");
-      if (this.parentElement.classList.contains("touch")) {
-        toggleClass(this, "rotate");
+      toggleClass(e.target.nextElementSibling, "active-dropdown");
+      if (e.target.parentElement.classList.contains("touch")) {
+        toggleClass(e.target, "rotate");
       }
 
       //close all dropdowns were opened before
       //rotate all arrows to start position (if item has arrow)
       dropdowns.forEach((item) => {
-        if (item !== this.nextElementSibling) {
+        if (item !== e.target.nextElementSibling) {
           item.classList.remove("active-dropdown");
           item.previousElementSibling.classList.remove("rotate");
         }
       });
-    });
+    }
   });
 }
